@@ -1,0 +1,44 @@
+[
+  {
+    "type": "dream",
+    "messages": [ "You have a strange dream about... slugs?", "Your dreams give you a strange moist feeling." ],
+    "category": "SLUGCAT",
+    "strength": 1
+  },
+  {
+    "type": "dream",
+    "messages": [
+      "You have a disturbing dream about torrential rain.",
+      "While dreaming, you see a distinctively slug-like reflection of yourself."
+    ],
+    "category": "SLUGCAT",
+    "strength": 2
+  },
+  {
+    "type": "dream",
+    "messages": [
+      "You blissfully dream of stealing from a tribe of ape-like scavengers. The pearls on their masks look pretty.",
+      "You have a disturbingly lifelike dream of becoming a slug-feline hybrid."
+    ],
+    "category": "SLUGCAT",
+    "strength": 3
+  },
+  {
+    "type": "dream",
+    "messages": [
+      "Rain pounds the ground far above, but you are safe in your sealed den.",
+      "A scavenger passes you a spear coiled with red ribbon in exchange for a pearl."
+    ],
+    "category": "SLUGCAT",
+    "strength": 4
+  },
+  {
+    "type": "dream",
+    "messages": [
+      "Rain pounds the ground far above, but you are safe in your sealed den.",
+      "A scavenger passes you a spear coiled with red ribbon in exchange for a pearl."
+    ],
+    "category": "SLUGCAT_NAT",
+    "strength": 3
+  }
+]

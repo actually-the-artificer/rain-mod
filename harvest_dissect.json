@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dissect_slugcat_sample_single",
+    "type": "harvest",
+    "message": "With cuts and pulls equally similar to both extraction and vandalism, you scrape together the most important parts of the creature.",
+    "entries": [ { "drop": "slugcat_sample_single", "type": "mutagen_group" } ]
+  },
+  {
+    "id": "dissect_slugcat_sample_small",
+    "type": "harvest",
+    "message": "With cuts and pulls equally similar to both extraction and vandalism, you scrape together the most important parts of the creature.",
+    "entries": [ { "drop": "slugcat_sample_small", "type": "mutagen_group" } ]
+  }
+]

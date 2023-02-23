@@ -1,0 +1,22 @@
+[
+  {
+    "type": "mutation_category",
+    "id": "SLUGCAT",
+    "name": "SLUGCAT",
+    "wip": true,
+    "threshold_mut": "THRESH_SLUGCAT",
+    "mutagen_message": "You feel the overwhelming urge to crawl under shelter.",
+    "memorial_message": "Feared the rain.",
+    "vitamin": "mutagen_slugcat"
+  },
+    {
+    "type": "mutation_category",
+    "id": "SLUGCAT_NAT",
+    "name": "SLUGCAT_NAT",
+    "wip": true,
+    "threshold_mut": "THRESH_SLUGCAT_NAT",
+    "mutagen_message": "Seeing this message is a bug; obtaining Natural Slugcat mutagen in game is impossible.",
+    "memorial_message": "Flung to a dry world.",
+    "vitamin": "mutagen_slugcat_nat"
+  }
+]

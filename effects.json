@@ -1,0 +1,53 @@
+[
+{
+    "type": "effect_type",
+    "id": "mutagen_slugcat",
+    "name": [ "Slugcat Mutation", "Slugcat Transformation", "Slugcat Metamorphosis" ],
+    "desc": [
+      "You consumed slugcat primer.",
+      "A sealed den will be nice.",
+      "The flood-rains are coming. Surely this will help you. It must."
+    ],
+    "main_parts_only": true,
+    "max_intensity": 3,
+    "resist_traits": [ "THRESH_SLUGCAT" ],
+    "base_mods": {
+      "vomit_chance": [ 1150 ],
+      "vomit_tick": [ 120 ],
+      "hurt_min": [ 1 ],
+      "hurt_max": [ 2 ],
+      "hurt_chance": [ 500 ],
+      "hurt_tick": [ 150 ],
+      "pain_min": [ 1 ],
+      "pain_max": [ 2 ],
+      "pain_chance": [ 90 ],
+      "pain_tick": [ 50 ]
+    },
+    "scaling_mods": {
+      "vomit_chance": [ -450 ],
+      "str_mod": [ 1 ],
+      "per_mod": [ 1 ],
+      "dex_mod": [ 1 ],
+      "int_mod": [ 1 ],
+      "hurt_chance": [ -240, -50 ],
+      "hurt_tick": [ -25 ],
+      "pain_chance": [ -30 ]
+    },
+    "rating": "bad",
+    "blood_analysis_description": "Slugcat Primer Contamination"
+  },
+  {
+    "type": "effect_type",
+    "id": "rain_aversion",
+    "name": [ "Rain Aversion" ],
+    "desc": [ "You feel as if you're about to be washed away." ],
+    "apply_message": "Your heart hammers as the rain falls.",
+    "rating": "bad",
+    "max_intensity": 10,
+    "max_duration": "10 m",
+    "int_add_val": 2,
+    "base_mods": { "per_mod": [ -5 ], "dex_mod": [ -2 ] },
+    "scaling_mods": { "speed_mod": [ -3 ] },
+    "show_in_info": true
+  }
+]

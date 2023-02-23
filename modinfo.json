@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "slugcats",
+    "name": "Rainworld Slugcats",
+    "authors": [ "the_artificer" ],
+    "description":  "The Cataclysm has brought over beings from a world with constant torrential rain. Struggle to survive in a ravaged world not your own.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

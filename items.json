@@ -1,0 +1,183 @@
+[  
+  {
+    "id": "flashbang_fruit",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "flashbang fruit" },
+    "description": "A small dark blue fruit that glows softly. When you gently squeeze it, it briefly flashes befoe glowing again.",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": 2000,
+    "price_postapoc": 500,
+    "to_hit": -4,
+    "material": [ "fruit" ],
+    "symbol": "o",
+    "color": "blue",
+    "use_action": {
+      "need_wielding": true,
+      "target": "flashbang_fruit_act",
+      "msg": "You squeeze the flashbang fruit.",
+      "target_charges": 0,
+      "active": true,
+      "menu_text": "Squeeze",
+      "type": "transform"
+    },
+    "flags": [ "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "flashbang_fruit_act",
+    "type": "TOOL",
+    "copy-from": "flashbang_fruit",
+    "name": { "str": "active flashbang fruit" },
+    "description": "This flashbang fruit is glowing, and will soon detonate with intense light, blinding and disorienting anyone nearby.  It may be a good idea to throw it!",
+    "initial_charges": 0,
+    "max_charges": 0,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "do_flashbang": true,
+      "sound_volume": 0,
+      "sound_msg": "",
+      "no_deactivate_msg": "You've already squeezed the %s, try throwing it instead."
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "id": "explosive_powder",
+    "type": "GENERIC",
+    "name": { "str": "explosive powder" },
+	"weight": "250 g",
+    "volume": "250 ml",
+    "price": 2000,
+    "price_postapoc": 500,
+	"charges": 100,
+    "to_hit": -4,
+    "material": [ "powder" ],
+    "symbol": "!",
+    "color": "red",
+    "description": "A highly-reactive dark red powder. It turns a gel-like consistency when mixed with water."
+  },
+      {
+    "id": "explosive_powder_paste",
+	"type": "GENERIC",
+    "name": { "str": "explosive paste" },
+	"copy-from": "explosive_powder",
+    "description": "This explosive powder has been mixed with water, turning it the consistency of putty. It can be used to coat things, if you're feeling desperate."
+  },
+  {
+    "id": "gel_grenade",
+	"type": "TOOL",
+	"category": "weapons",
+    "name": { "str": "gel grenade", "str_pl": "gel grenades" },
+	"description": "A grenade made by combining a roughly spherical object with explosive paste. Highly sensitive; handle with care.",
+	"weight": "250 g",
+    "volume": "250 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": -3,
+    "bashing": 4,
+    "material": [ "stone", "powder" ],
+    "symbol": "o",
+    "color": "red",
+	"use_action": {
+      "need_wielding": true,
+      "target": "gel_grenade_act",
+      "msg": "You prime the gel grenade.",
+      "target_charges": 0,
+      "active": true,
+      "menu_text": "Prime",
+      "type": "transform"
+    },
+	"flags": [ "BOMB" ]
+  },
+    {
+    "id": "gel_grenade_act",
+    "type": "TOOL",
+    "category": "weapons",
+	"name": { "str": "gel grenade", "str_pl": "gel grenades" },
+	"copy-from": "gel_grenade",
+	"description": "A grenade made by combining a roughly spherical object with explosive paste. Highly sensitive; handle with care. This one is about to blow!",
+	"initial_charges": 0,
+    "max_charges": 0,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "",
+      "no_deactivate_msg": "You've already primed the %s, try throwing it instead.",
+      "explosion": { "power": 200 }
+    },
+	"flags": [ "TRADER_AVOID", "BOMB" ]
+  },
+    {
+    "id": "iv_mutagen_slugcat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "slugcat mutagenic primer" },
+    "description": "A processed mutagenic primer the color of storm clouds.",
+    "looks_like": "iv_mutagen",
+    "color": "dark_gray",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the slugcat mutagenic primer.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_slugcat", 450, 550 ] ]
+    }
+  },
+  {
+    "id": "mutagen_slugcat",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "slugcat mutagen" },
+    "looks_like": "mutagen",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You drink the slugcat mutagen.",
+      "vitamins": [ [ "mutagen_slugcat", 225 ], [ "mutagen", 125 ] ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "slugcat_sample",
+    "copy-from": "mutagen_sample",
+    "color": "dark_gray",
+    "name": { "str": "slugcat sample" },
+    "description": "A slurry of displacement.",
+    "looks_like": "medical_sample",
+    "material": [ "flesh", "blood", "bone" ]
+  },
+  {
+    "id": "insecticidalsporebomb",
+    "type": "GENERIC",
+    "name": { "str": "insecticidal spore cluster" },
+	"weight": "150 g",
+    "volume": "250 ml",
+    "price": 2000,
+    "price_postapoc": 500,
+    "to_hit": -4,
+    "material": [ "fruit" ],
+    "symbol": "o",
+    "color": "dark_gray",
+    "description": "A pale gray ball of plant matter flecked with green. The fuse-like 'stalk' hisses and smokes as you hold it.",
+    "use_action": {
+      "need_wielding": true,
+      "menu_text": "Prime",
+      "msg": "You prime the spore puff.",
+      "type": "transform",
+	  "target_charges": 0,
+      "target": "insecticidalsporebomb_act"
+    }
+  },
+  {
+    "id": "insecticidalsporebomb_act",
+    "type": "GENERIC",
+    "name": { "str": "armed insecticidal spore cluster" },
+	"copy-from": "insecticidalsporebomb",
+    "description": "This insecticidal spore cluster is expelling highly toxic haze.",
+	"initial_charges": 0,
+    "max_charges": 0,
+    "turns_per_charge": 1,
+    "emits": [ "emit_insecticidal_stream" ],
+	"countdown_interval": 100
+  }
+]

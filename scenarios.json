@@ -1,0 +1,14 @@
+[  
+  {
+    "type": "scenario",
+    "id": "displaced_rainworlder",
+    "name": "Challenge - Lost Rainworlder",
+    "points": -8,
+    "description": "You were trying to avoid the next flood-rains, before the sky broke and the void called to you.  Now, you wake up in another world to find reality itself breaking apart.  You need to find shelter, and fast.",
+    "flags": [ "CHALLENGE", "LONE_START" ],
+    "start_name": "Field",
+    "allowed_locs": [ "sloc_field" ],
+    "eoc": [ "scenario_strong_portal_storm" ],
+	"professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "mutant_slugcat" ]
+  }
+]

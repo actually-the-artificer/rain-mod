@@ -1,0 +1,410 @@
+[
+  {
+    "type": "mutation",
+    "id": "THRESH_SLUGCAT",
+    "name": { "str": "Slugcat Mutant" },
+    "points": 1,
+    "description": "When the torrential rains come, you will be safe in your sealed den.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_SLUGCAT_NAT",
+    "name": { "str": "Native Slugcat" },
+    "points": 1,
+    "description": "You were a native of a world lashed by rain. The flood-rains may have come to your new home, but you persist while these hairless beings die.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true,
+	"vitamin_rates": [[ "mutagen", 5000 ], [ "mutagen_alpha", 5000 ], [ "mutagen_batrachian", 5000 ], [ "mutagen_beast", 5000 ], [ "mutagen_bird", 5000 ], [ "mutagen_cattle", 5000 ], [ "mutagen_cephalopod", 5000 ], [ "mutagen_chimera", 5000 ], [ "mutagen_elfa", 5000 ], [ "mutagen_feline", 5000 ], [ "mutagen_fish", 5000 ], [ "mutagen_gastropod", 5000 ], [ "mutagen_human", 5000 ], [ "mutagen_insect", 5000 ], [ "mutagen_lizard", 5000 ], [ "mutagen_lupine", 5000 ], [ "mutagen_medical", 5000 ], [ "mutagen_mouse", 5000 ], [ "mutagen_plant", 5000 ], [ "mutagen_rabbit", 5000 ], [ "mutagen_raptor", 5000 ], [ "mutagen_rat", 5000 ], [ "mutagen_slime", 5000 ], [ "mutagen_slugcat", 5000 ], [ "mutagen_spider", 5000 ], [ "mutagen_snail", 5000 ], [ "mutagen_troglobite", 5000 ], [ "mutagen_ursine", 5000 ]],
+	"flags": [
+    "CANNIBAL"
+	]
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_EARS",
+    "name": { "str": "Slugcat Ears" },
+    "points": 1,
+    "visibility": 2,
+    "ugliness": 3,
+    "description": "Your ears have stretched out and moved atop your head. They still look an off-putting fleshy color.",
+    "types": [ "EARS" ],
+    "category": [ "SLUGCAT" ],
+    "hearing_modifier": 1.25
+  },
+  {
+    "type": "mutation",
+    "id": "POISRESIST",
+    "copy-from": "POISRESIST",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BENDY1",
+    "copy-from": "BENDY1",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SPINES",
+    "copy-from": "SPINES",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "QUILLS",
+    "copy-from": "QUILLS",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEFT",
+    "copy-from": "DEFT",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CHEMIMBALANCE",
+    "copy-from": "CHEMIMBALANCE",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FASTHEALER",
+    "copy-from": "FASTHEALER",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FAST_REFLEXES",
+    "copy-from": "FAST_REFLEXES",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PAINREC1",
+    "copy-from": "PAINREC1",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PAINREC2",
+    "copy-from": "PAINREC2",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP",
+    "copy-from": "INT_UP",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP",
+    "copy-from": "DEX_UP",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_2",
+    "copy-from": "DEX_UP_2",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "THIRST",
+    "copy-from": "THIRST",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SMALL",
+    "copy-from": "SMALL",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SMALL2",
+    "copy-from": "SMALL2",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SMALL_OK",
+    "copy-from": "SMALL_OK",
+    "extend": { "category": [ "SLUGCAT_NAT" ], "threshreq": [ "THRESH_SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CRAFTY",
+    "copy-from": "CRAFTY",
+    "extend": { "category": [ "SLUGCAT_NAT" ], "threshreq": [ "THRESH_SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "NO_THIRST",
+    "copy-from": "NO_THIRST",
+    "extend": { "category": [ "SLUGCAT_NAT" ], "threshreq": [ "THRESH_SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "GOODCARDIO",
+    "copy-from": "GOODCARDIO",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALDISCORD",
+    "copy-from": "ANIMALDISCORD",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALDISCORD2",
+    "copy-from": "ANIMALDISCORD2",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SNOUT",
+    "copy-from": "SNOUT",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRETTY",
+    "copy-from": "PRETTY",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+    {
+    "type": "mutation",
+    "id": "HUNGER",
+    "copy-from": "HUNGER",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "UGLY",
+    "copy-from": "UGLY",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEFORMED",
+    "copy-from": "DEFORMED",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHT_BONES",
+    "copy-from": "LIGHT_BONES",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HOLLOW_BONES",
+    "copy-from": "HOLLOW_BONES",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET",
+    "copy-from": "FLEET",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FLEET2",
+    "copy-from": "FLEET2",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+    {
+    "type": "mutation",
+    "id": "FLIMSY",
+    "copy-from": "FLIMSY",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+    {
+    "type": "mutation",
+    "id": "FLIMSY2",
+    "copy-from": "FLIMSY2",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_TAIL",
+    "name": { "str": "Slugcat Tail" },
+    "points": 0,
+    "visibility": 6,
+    "ugliness": 2,
+    "description": "You have a thick, sturdy tail.  It improves your balance, making your ability to dodge higher, but prevents wearing non-fabric pants.",
+    "types": [ "TAIL" ],
+    "category": [ "SLUGCAT" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
+    "allow_soft_gear": true,
+    "dodge_modifier": 3
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_EARS_NAT",
+    "name": { "str": "Slugcat Ears" },
+    "points": 0,
+    "visibility": 2,
+    "description": "Two long ears sit atop your head.  You find it easier to tune in on sounds from afar.",
+    "types": [ "EARS" ],
+    "category": [ "SLUGCAT_NAT" ],
+    "hearing_modifier": 1.25
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_EYES_NAT",
+    "name": { "str": "Slugcat Eyes" },
+    "points": 0,
+    "visibility": 1,
+    "description": "Your eyes are black and pupilless, the color of the night sky.",
+    "types": [ "EYES" ],
+    "category": [ "SLUGCAT_NAT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_EYES",
+    "name": { "str": "Slugcat Eyes" },
+    "points": 1,
+    "visibility": 2,
+    "ugliness": 2,
+    "description": "Your eyes have changed. The iris and pupil have enlarged in size to encompass almost the whole eye socket. Nothing seems to have changed in your vision however.",
+    "types": [ "EYES" ],
+    "category": [ "SLUGCAT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_TAIL_NAT",
+    "name": { "str": "Slugcat Tail" },
+    "points": 0,
+    "visibility": 3,
+    "description": "You have a thick, sturdy tail.  It improves your balance, making your ability to dodge higher, but prevents wearing non-fabric pants.",
+    "types": [ "TAIL" ],
+    "category": [ "SLUGCAT_NAT" ],
+    "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
+    "allowed_items": [ "ALLOWS_TAIL" ],
+    "allow_soft_gear": true,
+    "dodge_modifier": 2
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_SKIN",
+    "name": { "str": "Slugcat Skin" },
+    "points": 1,
+    "visibility": 4,
+    "ugliness": 3,
+    "description": "Your skin has become a translucent creamy white, offering amazing protection from water and rain.",
+    "category": [ "SLUGCAT" ],
+    "wet_protection": [
+      { "part": "head", "ignored": 5 },
+      { "part": "leg_l", "ignored": 10 },
+      { "part": "leg_r", "ignored": 10 },
+      { "part": "foot_l", "ignored": 5 },
+      { "part": "foot_r", "ignored": 5 },
+      { "part": "arm_l", "ignored": 3 },
+      { "part": "arm_r", "ignored": 3 },
+      { "part": "hand_l", "ignored": 2 },
+      { "part": "hand_r", "ignored": 2 },
+      { "part": "torso", "ignored": 10 }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "SLIMY",
+    "copy-from": "SLIMY",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SLIME_HANDS",
+    "copy-from": "SLIME_HANDS",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "VISCOUS",
+    "copy-from": "VISCOUS",
+    "extend": { "category": [ "SLUGCAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALEMPATH",
+    "copy-from": "ANIMALEMPATH",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CARNIVORE",
+    "copy-from": "CARNIVORE",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRED1",
+    "copy-from": "PRED1",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRED2",
+    "copy-from": "PRED2",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ROT1",
+    "copy-from": "ROT1",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ROT2",
+    "copy-from": "ROT2",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+    {
+    "type": "mutation",
+    "id": "FANGS",
+    "copy-from": "FANGS",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_SKIN_NAT",
+    "name": { "str": "Slugcat Skin" },
+    "points": 1,
+    "visibility": 2,
+    "description": "Your skin is pliable and slightly damp, offering a small amount of protection against rain.",
+    "types": [ "SKIN" ],
+    "category": [ "SLUGCAT_NAT" ],
+    "wet_protection": [
+      { "part": "head", "ignored": 3 },
+      { "part": "leg_l", "ignored": 5 },
+      { "part": "leg_r", "ignored": 5 },
+      { "part": "foot_l", "ignored": 3 },
+      { "part": "foot_r", "ignored": 3 },
+      { "part": "arm_l", "ignored": 6 },
+      { "part": "arm_r", "ignored": 6 },
+      { "part": "hand_l", "ignored": 2 },
+      { "part": "hand_r", "ignored": 2 },
+      { "part": "torso", "ignored": 5 }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "STOMACH_CONT",
+    "name": { "str": "Slugcat Stomach" },
+    "points": 1,
+    "description": "Your stomach has become a container that can store small objects.",
+    "category": [ "SLUGCAT", "SLUGCAT_NAT" ],
+    "integrated_armor": [ "integrated_stomach" ]
+  }
+]

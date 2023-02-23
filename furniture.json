@@ -1,0 +1,31 @@
+[  
+  {
+    "type": "furniture",
+    "id": "f_bush_flashbang",
+    "name": "glowing bush",
+    "description": "A strange alien bush with sofly glowing blue fruits.",
+    "symbol": "#",
+    "color": "blue",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOCOLLIDE" ],
+    "examine_action": "harvest_furn_nectar",
+    "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn" ], "id": "flashbang_harv" } ],
+    "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "brush." }
+  },
+  {
+    "type": "furniture",
+    "id": "f_bush_explosive",
+    "name": "glowing bush",
+	"symbol": "#",
+    "description": "A strange alien bush with several small red berries on a black stem. The fruits seem to glow softly.",
+    "color": "red",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOCOLLIDE" ],
+    "examine_action": "harvest_furn_nectar",
+    "harvest_by_season": [ { "seasons": [ "spring", "summer", "autumn" ], "id": "explosive_harv" } ],
+    "bash": { "str_min": 2, "str_max": 6, "sound": "crunch.", "sound_fail": "brush." }
+  }
+]
+  
