@@ -1,0 +1,88 @@
+[
+  {
+    "type": "MONSTER",
+    "abstract": "mon_longleg_abstract",
+    "name": { "str": "abstracted longlegs" },
+    "color": "white",
+    "symbol": "&",
+    "bodytype": "dog",
+    "material": [ "flesh" ],
+    "species": [ "ABERRATION" ],
+    "default_faction": "mutant",
+    "volume": "500 L",
+    "weight": "175 kg",
+    "hp": 300,
+    "speed": 85,
+    "attack_cost": 85,
+    "melee_skill": 3,
+    "melee_dice": 5,
+    "melee_dice_sides": 5,
+    "dodge": 2,
+    "armor_bash": 10,
+    "armor_cut": 20,
+    "armor_stab": 20,
+    "armor_bullet": 25,
+    "armor_acid": 0,
+    "armor_elec": 0,
+    "bleed_rate": 0,
+    "vision_day": 3,
+    "vision_night": 3,
+    "aggression": 100,
+    "morale": 100,
+    "harvest": "longlegs",
+    "//": "TODO: When effects/spells can mess with path settings + flags move smartness to the effect of dedicated coordinatiors",
+    "path_settings": { "avoid_sharp": true, "avoid_traps": true, "max_dist": 400 },
+    "flags": [ "HEARS", "SEES", "WARM" ],
+    "anger_triggers": [ "HURT" ]
+  },
+  {
+    "id": "mon_longleg_brother",
+    "type": "MONSTER",
+    "name": { "str": "brother long-legs" },
+    "copy-from": "mon_longleg_abstract",
+    "description": "A large, black bulbous mass of flesh accented by several brown-green 'X' shapes. Several long tentacles extend out from the central mass, blindly groping for prey.",
+    "color": "brown_green",
+	"regenerates": 25,
+    "special_attacks": [
+      {
+        "id": "stretch_attack",
+        "cooldown": 10,
+        "range": 2,
+        "hit_dmg_u": "%1$s lashes your %2$s with a tentacle!",
+        "hit_dmg_npc": "%1$s lashes <npcname>'s %2$s with a tentacle!",
+        "no_dmg_msg_u": "%1$s lashes your %2$s with a tentacle, but it glances off your armor!",
+        "no_dmg_msg_npc": "%1$s lashes <npcname>'s %2$s with a tentacle, but it glances off armor!",
+        "miss_msg_u": "%s lashes you with a tentacle, but you evade it!",
+        "miss_msg_npc": "%s lashes at <npcname> with a tentacle, but they evade it!"
+      },
+      [ "RANGED_PULL", 20 ],
+      [ "GRAB_DRAG", 10 ]
+    ]
+  },
+  {
+    "id": "mon_longleg_daddy",
+    "type": "MONSTER",
+    "name": { "str": "daddy long-legs" },
+    "copy-from": "mon_longleg_abstract",
+    "description": "A large, black bulbous mass of flesh accented by several blue 'X' shapes. Several long tentacles extend out from the central mass, blindly groping for prey.",
+    "color": "black_cyan",
+    "hp": 400,
+	"regenerates": 50,
+    "melee_skill": 5,
+    "special_attacks": [
+      {
+        "id": "stretch_attack",
+        "cooldown": 10,
+        "range": 2,
+        "hit_dmg_u": "%1$s lashes your %2$s with a tentacle!",
+        "hit_dmg_npc": "%1$s lashes <npcname>'s %2$s with a tentacle!",
+        "no_dmg_msg_u": "%1$s lashes your %2$s with a tentacle, but it glances off your armor!",
+        "no_dmg_msg_npc": "%1$s lashes <npcname>'s %2$s with a tentacle, but it glances off armor!",
+        "miss_msg_u": "%s lashes you with a tentacle, but you evade it!",
+        "miss_msg_npc": "%s lashes at <npcname> with a tentacle, but they evade it!"
+      },
+      [ "RANGED_PULL", 10 ],
+      [ "GRAB_DRAG", 5 ]
+    ]
+  }
+]

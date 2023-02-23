@@ -1,0 +1,71 @@
+[
+  {
+    "type": "weakpoint_set",
+    "id": "wps_miros_bird",
+    "weakpoints": [
+      {
+        "id": "wing",
+        "name": "the wing",
+        "crit_mult": { "all": 0.75 },
+        "difficulty": { "ranged": 3, "melee": 1 },
+        "coverage_mult": { "point": 0.75 },
+        "effects": [
+          { "effect": "downed", "chance": 5, "message": "The %s is knocked down!", "damage_required": [ 10, 30 ] },
+          { "effect": "downed", "chance": 15, "message": "The %s is knocked down!", "damage_required": [ 31, 50 ] },
+          { "effect": "downed", "chance": 25, "message": "The %s is knocked down!", "damage_required": [ 51, 100 ] }
+        ],
+        "coverage": 15
+      },
+      {
+        "id": "head",
+        "name": "the head",
+        "coverage": 5,
+        "crit_mult": { "all": 1.1 },
+        "armor_mult": { "physical": 0.75 },
+        "difficulty": { "melee": 2, "ranged": 5 },
+        "effects": [
+          {
+            "effect": "stunned",
+            "duration": [ 1, 2 ],
+            "chance": 5,
+            "message": "The %s is stunned!",
+            "damage_required": [ 1, 10 ]
+          },
+          {
+            "effect": "stunned",
+            "duration": [ 1, 2 ],
+            "chance": 25,
+            "message": "The %s is stunned!",
+            "damage_required": [ 11, 50 ]
+          },
+          {
+            "effect": "stunned",
+            "duration": [ 1, 2 ],
+            "chance": 45,
+            "message": "The %s is stunned!",
+            "damage_required": [ 51, 100 ]
+          }
+        ]
+      },
+      {
+        "id": "eye",
+        "name": "the eye",
+        "armor_mult": { "physical": 0 },
+        "coverage": 1,
+        "crit_mult": { "all": 1.25 },
+        "difficulty": { "ranged": 5, "melee": 3 },
+        "coverage_mult": { "broad": 0.5 },
+        "effects": [
+          { "effect": "blind", "duration": [ 1, 2 ], "chance": 40, "message": "The %s is blinded!", "damage_required": [ 1, 25 ] },
+          {
+            "effect": "blind",
+            "permanent": true,
+            "chance": 30,
+            "message": "The %s's eyes are obliterated!",
+            "damage_required": [ 26, 100 ]
+          }
+        ]
+      }
+    ]
+  }
+]

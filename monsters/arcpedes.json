@@ -1,0 +1,127 @@
+[
+  {
+    "id": "mon_arcpede_small",
+    "type": "MONSTER",
+    "name": { "str": "infant arcpede" },
+    "copy-from": "mon_centipede_small",
+    "description": "A light-orange centipede half a meter long, skittering quickly in the underbrush.  Probably won't think you're suitable prey, but beware its electricity.",
+	"color": "light_red",
+    "special_attacks": [
+      {
+        "type": "bite",
+        "attack_upper": false,
+        "cooldown": 10,
+        "move_cost": 115,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 2, "armor_penetration": 8 } ],
+        "min_mul": 3,
+        "max_mul": 5.4,
+        "forbidden_effects_any": [ "maimed_mandible" ]
+      },
+      [ "TAZER", 10 ]
+    ],
+    "special_when_hit": [ "ZAPBACK", 100 ],
+    "zombify_into": "mon_meat_cocoon_tiny",
+    "flags": [ "CLIMBS", "SEES", "SMELLS", "KEENNOSE", "HEARS", "GOODHEARING", "PATH_AVOID_FIRE" ],
+    "fear_triggers": [ "HURT" ]
+  },
+    {
+    "id": "mon_arcpede",
+    "type": "MONSTER",
+    "name": { "str": "arcpede" },
+    "copy-from": "mon_centipede_giant",
+    "description": "A light-orange centipede about two meters long, skittering quickly in the underbrush.  The crackling mandibles and large size makes it clear it considers most things - including humans and slugcats - as suitable prey.",
+	"color": "light_red",
+	"melee_skill": 3,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "dodge": 2,
+    "armor_bash": 6,
+    "armor_cut": 6,
+    "armor_stab": 6,
+    "armor_bullet": 6,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "attack_upper": false,
+        "cooldown": 10,
+        "move_cost": 115,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 2, "armor_penetration": 8 } ],
+        "min_mul": 3,
+        "max_mul": 5.4,
+        "forbidden_effects_any": [ "maimed_mandible" ]
+      },
+      [ "TAZER", 10 ]
+    ],
+    "special_when_hit": [ "ZAPBACK", 100 ],
+    "zombify_into": "mon_meat_cocoon_med",
+    "flags": [ "CLIMBS", "SEES", "SMELLS", "KEENNOSE", "HEARS", "GOODHEARING", "PATH_AVOID_FIRE" ],
+    "fear_triggers": [ "HURT" ]
+  },
+  {
+    "id": "mon_centiwing",
+    "type": "MONSTER",
+    "name": { "str": "centiwing" },
+    "copy-from": "mon_centipede_giant",
+	"description": "A green centipede about two meters long.  Skittish and quick to flee, it darts through the air on two pairs of fragile-looking red wings.",
+	"melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 8,
+    "dodge": 2,
+    "armor_bash": 6,
+    "armor_cut": 6,
+    "armor_stab": 6,
+    "armor_bullet": 6,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "attack_upper": false,
+        "cooldown": 10,
+        "move_cost": 115,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 2, "armor_penetration": 8 } ],
+        "min_mul": 3,
+        "max_mul": 5.4,
+        "forbidden_effects_any": [ "maimed_mandible" ]
+      },
+	  [ "TAZER", 10 ]
+    ],
+    "zombify_into": "mon_meat_cocoon_med",
+	"special_when_hit": [ "ZAPBACK", 100 ],
+    "flags": [ "CLIMBS", "SEES", "SMELLS", "KEENNOSE", "HEARS", "GOODHEARING", "PATH_AVOID_FIRE", "FLIES" ],
+    "fear_triggers": [ "HURT" ]
+  },
+  {
+    "id": "mon_centipede_red",
+    "type": "MONSTER",
+    "name": { "str": "red centipede" },
+    "copy-from": "mon_centipede_giant",
+	"description": "A dark-red centipede about two meters long, skittering quickly in the underbrush. It moves with alarming speed, seemingly specialized to hunt prey as nimble and agile as itself. You really don't want to see if you'd fare better.",
+	"color": "light_red",
+	"aggression": 100,
+	"morale": 100,
+	"melee_skill": 5,
+    "melee_dice": 5,
+    "melee_dice_sides": 5,
+    "dodge": 2,
+    "armor_bash": 10,
+    "armor_cut": 20,
+    "armor_stab": 30,
+    "armor_bullet": 20,
+    "special_attacks": [
+      {
+        "type": "bite",
+        "attack_upper": false,
+        "cooldown": 10,
+        "move_cost": 115,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 2, "armor_penetration": 8 } ],
+        "min_mul": 3,
+        "max_mul": 5.4,
+        "forbidden_effects_any": [ "maimed_mandible" ]
+      },
+	  [ "TAZER", 10 ]
+    ],
+	"special_when_hit": [ "ZAPBACK", 100 ],
+    "zombify_into": "mon_meat_cocoon_med",
+    "flags": [ "CLIMBS", "SEES", "SMELLS", "KEENNOSE", "HEARS", "GOODHEARING", "PATH_AVOID_FIRE" ],
+    "fear_triggers": [ "HURT" ]
+  }
+]

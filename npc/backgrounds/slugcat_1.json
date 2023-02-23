@@ -1,0 +1,18 @@
+[
+  {
+    "id": "BGSS_SLUGCAT_1_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": "Well - I was near my den; trying to get some food and drink before the next flood-rain. Then, things got bad.",
+    "responses": [
+      { "text": "What happened?", "topic": "BGSS_SLUGCAT_1_STORY2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" },
+      { "text": "<end_talking>", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "BGSS_SLUGCAT_1_STORY2",
+    "type": "talk_topic",
+    "dynamic_line": "The skies broke. Not like the grey overcast thing you get when things flood, oh no. There's that voice in your head, telling me to come to it. That great things wait on the other side. I don't know where this is, I don't know what to make of 'humans' like you - but I got to survive.",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  }
+]

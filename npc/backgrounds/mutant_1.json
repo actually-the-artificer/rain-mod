@@ -1,0 +1,23 @@
+[
+  {
+    "id": "BGSS_MUTANT_1_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": "I was a test subject in a lab. Got a hella load of shit stuck in me as you might tell by my looks. One day these eggheads prepared some snail and feline primers, as they called them, and led me to a room with a huge machine. They injected the mixture into me, put me inside, and pressed a button.",
+    "responses": [
+      { "text": "What happened then?", "topic": "BGSS_MUTANT_1_STORY2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }
+    ]
+  },
+  {
+    "id": "BGSS_MUTANT_1_STORY2",
+    "type": "talk_topic",
+    "dynamic_line": "The machine lit up. I felt a wrenching sensation, then found myself in a weird earthlike world. It was wet as all hell. I saw a small creature which came up to my shoulders, looking very much like a cat holding a spear. It noticed me and stared.",
+    "responses": [ { "text": "Did the creature do anything?", "topic": "BGSS_MUTANT_1_STORY3" },{ "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  },
+    {
+    "id": "BGSS_MUTANT_1_STORY3",
+    "type": "talk_topic",
+    "dynamic_line": "It made a gurgling screaming noise and threw its spear at me! Luckily it wasn't a good shot else I'd have died. Then I felt another wrenching sensation, but I wasn't back at the lab. I was here. At least I'm free now.",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  }
+]

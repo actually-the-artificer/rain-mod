@@ -1,0 +1,17 @@
+[
+  {
+    "id": "BGSS_SLUGCAT_2_STORY1",
+    "type": "talk_topic",
+    "dynamic_line": "I was scavenging for food near where big predators called Miros Birds live. They're huge things, can tear a red lizard apart with these snapping beaks. One swooped near on top of me. I was stuck there in its talons, trying to get out.",
+    "responses": [
+      { "text": "But you did get out.", "topic": "BGSS_SLUGCAT_2_STORY2" },
+      { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }
+    ]
+  },
+  {
+    "id": "BGSS_SLUGCAT_2_STORY2",
+    "type": "talk_topic",
+    "dynamic_line": "Eventually yes.  I was seriously injured and terrified. The Miros Bird had caught sight of a bigger meal than me; an injured green lizard. It was night. I tried to get back to my den before the rains came... but... well... something happened to the sky. It wasn't like rain at all. It was like... the world itself had torn open and showed me what it could have been like, if things were different. It dragged me in, to here. Wherever here is.",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
+  }
+]

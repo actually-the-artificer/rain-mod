@@ -1,0 +1,61 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slugcat_spears",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "spear_stone_simple", "prob": 15 },
+          { "item": "spear_copper", "prob": 5 },
+          { "item": "spear_wood", "prob": 25 },
+          { "item": "spear_rebar", "prob": 50 },
+          { "item": "spear_knife_superior", "prob": 5 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slugcat_grenades",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "flashbang_fruit", "prob": 25},
+          { "item": "gel_grenade", "prob": 75 }
+        ]
+      }
+    ]
+  },
+    {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slugcat_flashbangs",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "flashbang_fruit", "prob": 100 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slugcat_spears_strapped",
+    "entries": [
+      { "item": "spearsling", "prob": 100, "contents_item": { "group": "slugcat_spears" } },
+      {
+        "distribution": [
+          { "item": "spear_stone_simple", "prob": 15 },
+          { "item": "spear_copper", "prob": 5 },
+          { "item": "spear_wood", "prob": 25 },
+          { "item": "spear_rebar", "prob": 50 },
+          { "item": "spear_knife_superior", "prob": 5 }
+        ],
+		"prob": 100
+      }
+    ]
+  }
+]
