@@ -6,11 +6,10 @@
     "entries": [
       {
         "distribution": [
-          { "item": "spear_stone_simple", "prob": 15 },
-          { "item": "spear_copper", "prob": 5 },
-          { "item": "spear_wood", "prob": 25 },
-          { "item": "spear_rebar", "prob": 50 },
-          { "item": "spear_knife_superior", "prob": 5 }
+          { "item": "spear_stone_simple", "prob": 10 },
+          { "item": "spear_wood_simple", "prob": 15 },
+          { "item": "sharp_rebar", "prob": 25 },
+          { "item": "pointed_rebar", "prob": 50 }
         ]
       }
     ]
@@ -48,11 +47,10 @@
       { "item": "spearsling", "prob": 100, "contents_item": { "group": "slugcat_spears" } },
       {
         "distribution": [
-          { "item": "spear_stone_simple", "prob": 15 },
-          { "item": "spear_copper", "prob": 5 },
-          { "item": "spear_wood", "prob": 25 },
-          { "item": "spear_rebar", "prob": 50 },
-          { "item": "spear_knife_superior", "prob": 5 }
+          { "item": "spear_stone_simple", "prob": 10 },
+          { "item": "spear_wood_simple", "prob": 15 },
+          { "item": "sharp_rebar", "prob": 25 },
+          { "item": "pointed_rebar", "prob": 50 }
         ],
 		"prob": 100
       }
