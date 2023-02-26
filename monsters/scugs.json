@@ -215,7 +215,7 @@
     "id": "mon_slugcat_mutant",
     "type": "MONSTER",
     "name": { "str": "slugcat mutant" },
-    "description": "A deformed test subject with transulcent skin. Two flesh-coloured ears similar to that of a wild slugcat protude from the sides of their head while from their rear, a thick flesh-colored tail emerges. The whites of their eyes are now supplanted by their immensely-dilated iris and pupils. Acrid-smelling slime drips from their hands every so often, sizzling through the floor. Their tattered, slime-stained jumpsuit is the only remainder of the human this monstrosity used to be.",
+    "description": "A mutated test subject with translucent skin. Their irises have dilated immensely, and under the slime-stained jumpsuit you catch glimpses of squirming, tumor-like cysts.",
     "default_faction": "lab_mutant",
     "bodytype": "human",
     "species": [ "MUTANT" ],
