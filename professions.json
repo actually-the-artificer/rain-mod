@@ -1,26 +1,20 @@
 [
   {
-    "type": "item_group",
-    "subtype": "collection",
-    "id": "spear_slugcat",
-    "entries": [ { "item": "spear_wood", "count": 1 } ]
-  },
-  {
     "type": "profession",
     "id": "native_slugcat_survivor",
     "name": "Native Slugcat (Survivor)",
     "description": "You hailed from a world with constant torrential rains. While this world does not habor the same phenomena, far more insidious things lurk in the shadows.",
     "points": 5,
     "skills": [ { "level": 2, "name": "throw" }, { "level": 2, "name": "swimming" }, { "level": 2, "name": "dodge" } ],
-		"items": { "both": { "items": ["gel_grenade"] }},
+    "items": { "both": { "items": [ "gel_grenade" ] } },
     "traits": [
       "THRESH_SLUGCAT_NAT",
       "SLUGCAT_EARS_NAT",
       "SLUGCAT_EYES_NAT",
       "SLUGCAT_TAIL_NAT",
       "SLUGCAT_SKIN_NAT",
-	  "STOMACH_CONT",
-	  "HUNGER",
+      "STOMACH_CONT",
+      "HUNGER",
       "FAST_REFLEXES",
       "PAINREC1",
       "INT_UP",
@@ -32,8 +26,7 @@
       "SLIMY",
       "GOODCARDIO",
       "NO_THIRST",
-      "FLIMSY2",
-      "ILLITERATE"
+      "FLIMSY3"
     ]
   },
   {
@@ -43,18 +36,18 @@
     "description": "You hailed from a world with constant torrential rains. While this world does not habor the same phenomena, far more insidious things lurk in the shadows.",
     "points": 6,
     "skills": [ { "level": 3, "name": "speech" }, { "level": 3, "name": "swimming" }, { "level": 3, "name": "dodge" } ],
-	"items": { "both": { "items": ["flashbang_fruit"] }},
+    "items": { "both": { "items": [ "flashbang_fruit" ] } },
     "traits": [
       "THRESH_SLUGCAT_NAT",
       "SLUGCAT_EARS_NAT",
       "SLUGCAT_EYES_NAT",
       "SLUGCAT_TAIL_NAT",
       "SLUGCAT_SKIN_NAT",
-	  "STOMACH_CONT",
+      "STOMACH_CONT",
       "FAST_REFLEXES",
       "PAINREC1",
       "DEX_UP_2",
-	  "HUNGER",
+      "HUNGER",
       "CRAFTY",
       "ANIMALDISCORD2",
       "LIGHT_BONES",
@@ -62,10 +55,9 @@
       "SLIMY",
       "GOODCARDIO",
       "NO_THIRST",
-	  "PACIFIST",
-      "FLIMSY2",
+      "PACIFIST",
+      "FLIMSY3",
       "PRETTY",
-      "ILLITERATE",
       "ANIMALEMPATH"
     ]
   },
@@ -83,20 +75,15 @@
       { "level": 3, "name": "stabbing" },
       { "level": 3, "name": "unarmed" }
     ],
-    "items": {
-      "both": {
-        "items": [ "gel_grenade" ],
-        "entries": [ { "item": "spearsling", "contents-group": "spear_slugcat", "custom-flags": [ "UNDERSIZE" ] } ]
-      }
-    },
+    "items": { "both": { "items": [ "gel_grenade", "sharp_rebar" ] } },
     "traits": [
       "THRESH_SLUGCAT_NAT",
       "SLUGCAT_EARS_NAT",
       "SLUGCAT_EYES_NAT",
       "SLUGCAT_TAIL_NAT",
       "SLUGCAT_SKIN_NAT",
-	  "STOMACH_CONT",
-	  "HUNGER",
+      "STOMACH_CONT",
+      "HUNGER",
       "FAST_REFLEXES",
       "PAINREC1",
       "DEX_UP_2",
@@ -107,9 +94,8 @@
       "SLIMY",
       "GOODCARDIO",
       "NO_THIRST",
-      "FLIMSY2",
+      "FLIMSY3",
       "PRED2",
-      "ILLITERATE",
       "ROT2",
       "FANGS",
       "CARNIVORE"
@@ -140,13 +126,13 @@
       "FAST_REFLEXES",
       "PAINREC2",
       "THIRST",
-	  "FLIMSY",
+      "FLIMSY",
       "ANIMALDISCORD",
       "HOLLOW_BONES",
       "FLEET2",
       "SLIME_HANDS",
       "DEFORMED",
-	  "CHEMIMBALANCE",
+      "CHEMIMBALANCE",
       "SNOUT",
       "GOODCARDIO",
       "QUILLS",
