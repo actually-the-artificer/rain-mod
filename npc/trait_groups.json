@@ -24,7 +24,7 @@
 	 {"trait": "SLIMY", "prob": 100 },
 	 {"trait": "GOODCARDIO", "prob": 100 },
 	 {"trait": "NO_THIRST", "prob": 100 },
-	 {"trait": "FLIMSY2", "prob": 100 }
+	 {"trait": "FLIMSY3", "prob": 100 }
     ]
   },
   {
@@ -50,7 +50,7 @@
 	 {"trait": "SLIMY", "prob": 100 },
 	 {"trait": "GOODCARDIO", "prob": 100 },
 	 {"trait": "NO_THIRST", "prob": 100 },
-	 {"trait": "FLIMSY2", "prob": 100 },
+	 {"trait": "FLIMSY3", "prob": 100 },
 	 {"trait": "ANIMALEMPATH2", "prob": 100 },
 	 {"trait": "PRETTY", "prob": 100 },
 	 {"trait": "PACIFIST", "prob": 100 }
@@ -79,7 +79,7 @@
 	 {"trait": "SLIMY", "prob": 100 },
 	 {"trait": "GOODCARDIO", "prob": 100 },
 	 {"trait": "NO_THIRST", "prob": 100 },
-	 {"trait": "FLIMSY2", "prob": 100 },
+	 {"trait": "FLIMSY3", "prob": 100 },
 	 {"trait": "ROT2", "prob": 100 },
 	 {"trait": "CARNIVORE", "prob": 100 },
 	 {"trait": "FANGS", "prob": 100 }
