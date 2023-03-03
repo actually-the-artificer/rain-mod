@@ -88,14 +88,18 @@
       {
         "id": "stretch_attack",
         "cooldown": 10,
-        "range": 2,
+        "range": 1,
         "hit_dmg_u": "%1$s thrusts a spear at your %2$s, stabbing it!",
         "hit_dmg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, stabbing it!",
         "no_dmg_msg_u": "%1$s thrusts a spear at your %2$s, but glances off your armor!",
         "no_dmg_msg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, but glances off armor!",
         "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
-      }
+      }.
+      [
+      "scratch",
+      15
+      ]
     ],
     "reproduction": { "baby_monster": "mon_slugpup_survivor", "baby_count": 2, "baby_timer": 360 },
     "baby_flags": [ "AUTUMN" ]
@@ -111,14 +115,18 @@
       {
         "id": "stretch_attack",
         "cooldown": 10,
-        "range": 2,
+        "range": 1,
         "hit_dmg_u": "%1$s thrusts a spear at your %2$s, stabbing it!",
         "hit_dmg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, stabbing it!",
         "no_dmg_msg_u": "%1$s thrusts a spear at your %2$s, but glances off your armor!",
         "no_dmg_msg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, but glances off armor!",
         "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
-      }
+      },
+      [
+      "scratch",
+      15
+      ]
     ]
   },
   {
@@ -172,14 +180,23 @@
       {
         "id": "stretch_attack",
         "cooldown": 10,
-        "range": 2,
+        "range": 1,
         "hit_dmg_u": "%1$s thrusts a spear at your %2$s, stabbing it!",
         "hit_dmg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, stabbing it!",
         "no_dmg_msg_u": "%1$s thrusts a spear at your %2$s, but glances off your armor!",
         "no_dmg_msg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, but glances off armor!",
         "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
-      }
+      },
+      { "type": "bite", "cooldown": 10 },
+      [
+      "GRAB",
+      10
+      ],
+      [
+      "scratch",
+      10
+    ]
     ]
   },
   {
