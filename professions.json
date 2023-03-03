@@ -6,7 +6,7 @@
     "description": "You hailed from a world with constant torrential rains. Flood-rains or no, your wits are your greatest defense against these dark days ahead.",
     "points": 5,
     "skills": [ { "level": 2, "name": "throw" }, { "level": 2, "name": "swimming" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "survival" } ],
-    "items": { "both": { "items": [ "gel_grenade" ] } },
+    "items": { "both": { "items": [ "gel_grenade", "pointy_stick" ] } },
     "traits": [
       "THRESH_SLUGCAT_NAT",
       "SLUGCAT_EARS_NAT",
@@ -21,11 +21,12 @@
       "DEX_UP_2",
       "CRAFTY",
       "ANIMALDISCORD2",
-      "LIGHT_BONES",
+      "HOLLOW_BONES",
       "FLEET",
       "SLIMY",
       "GOODCARDIO",
       "NO_THIRST",
+      "CLAWS",
       "FLIMSY3"
     ]
   },
@@ -50,7 +51,7 @@
       "HUNGER",
       "CRAFTY",
       "ANIMALDISCORD2",
-      "LIGHT_BONES",
+      "HOLLOW_BONES",
       "FLEET",
       "SLIMY",
       "GOODCARDIO",
@@ -89,7 +90,7 @@
       "DEX_UP_2",
       "CRAFTY",
       "ANIMALDISCORD",
-      "LIGHT_BONES",
+      "HOLLOW_BONES",
       "FLEET",
       "SLIMY",
       "GOODCARDIO",
@@ -98,6 +99,7 @@
       "PRED2",
       "ROT2",
       "FANGS",
+      "CLAWS",
       "CARNIVORE"
     ]
   },
@@ -127,7 +129,7 @@
       "THIRST",
       "FLIMSY",
       "ANIMALDISCORD",
-      "HOLLOW_BONES",
+      "LIGHT_BONES",
       "FLEET2",
       "SLIME_HANDS",
       "DEFORMED",
