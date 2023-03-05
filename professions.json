@@ -28,7 +28,8 @@
       "NO_THIRST",
       "CLAWS",
       "FLIMSY3"
-    ]
+    ],
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -60,7 +61,8 @@
       "FLIMSY3",
       "PRETTY",
       "ANIMALEMPATH"
-    ]
+    ],
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -101,7 +103,8 @@
       "FANGS",
       "CLAWS",
       "CARNIVORE"
-    ]
+    ],
+    "flags": [ "SCEN_ONLY" ]
   },
   {
     "type": "profession",
@@ -139,6 +142,7 @@
       "QUILLS",
       "ROT3",
       "VISCOUS"
-    ]
+    ],
+    "flags": [ "SCEN_ONLY" ]
   }
 ]
