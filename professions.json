@@ -27,7 +27,7 @@
       "GOODCARDIO",
       "NO_THIRST",
       "CLAWS",
-      "FLIMSY3"
+      "FLIMSY2"
     ],
     "flags": [ "SCEN_ONLY" ]
   },
@@ -58,7 +58,7 @@
       "GOODCARDIO",
       "NO_THIRST",
       "PACIFIST",
-      "FLIMSY3",
+      "FLIMSY2",
       "PRETTY",
       "ANIMALEMPATH"
     ],
@@ -97,7 +97,7 @@
       "SLIMY",
       "GOODCARDIO",
       "NO_THIRST",
-      "FLIMSY3",
+      "FLIMSY2",
       "PRED2",
       "ROT2",
       "FANGS",
