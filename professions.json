@@ -6,7 +6,7 @@
     "description": "You hailed from a world with constant torrential rains. Flood-rains or no, your wits are your greatest defense against these dark days ahead.",
     "points": 5,
     "skills": [ { "level": 2, "name": "throw" }, { "level": 2, "name": "swimming" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "survival" } ],
-    "items": { "both": { "items": [ "gel_grenade", "pointy_stick" ] } },
+    "items": { "both": { "items": [ "pointed_rebar" ] } },
     "traits": [
       "THRESH_SLUGCAT_NAT",
       "SLUGCAT_EARS_NAT",
@@ -38,7 +38,7 @@
     "description": "You hailed from a world with constant torrential rains. Kindness and mercy will bring you and the beings of this world together, no matter what.",
     "points": 6,
     "skills": [ { "level": 3, "name": "speech" }, { "level": 3, "name": "swimming" }, { "level": 3, "name": "dodge" } ],
-    "items": { "both": { "items": [ "flashbang_fruit" ] } },
+    "items": { "both": { "items": [ "flashbang_fruit", "pointy_stick" ] } },
     "traits": [
       "THRESH_SLUGCAT_NAT",
       "SLUGCAT_EARS_NAT",
