@@ -5,7 +5,7 @@
     "name": "Native Slugcat (Survivor)",
     "description": "You hailed from a world with constant torrential rains. Flood-rains or no, your wits are your greatest defense against these dark days ahead.",
     "points": 5,
-    "skills": [ { "level": 2, "name": "throw" }, { "level": 2, "name": "swimming" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "survival" } ],
+    "skills": [ { "level": 2, "name": "throw" }, { "level": 2, "name": "swimming" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "survival" }, { "level": 2, "name": "stabbing" } ],
     "items": { "both": { "items": [ "pointed_rebar" ] } },
     "traits": [
       "THRESH_SLUGCAT_NAT",
