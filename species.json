@@ -1,0 +1,12 @@
+[
+{
+    "type": "SPECIES",
+    "id": "SLUGCAT",
+    "description": "a slugcat"
+  },
+  {
+    "type": "SPECIES",
+    "id": "SCAVENGER",
+    "description": "a scavenger"
+  }
+]
