@@ -3,7 +3,16 @@
     "type": "MONSTER_FACTION",
     "name": "slugcat",
     "base_faction": "animal",
-    "by_mood": [ "felidae", "human" ],
-    "neutral": [ "dog" ]
+    "by_mood": [ "small_animal", "animal", "human", "scavenger" ],
+    "hate": [ "zombie", "nether" ],
+    "friendly": [ "slugcat" ],
+  },
+    {
+    "type": "MONSTER_FACTION",
+    "name": "scavenger",
+    "base_faction": "animal",
+    "by_mood": [ "small_animal", "animal", "human", "slugcat" ],
+    "hate": [ "zombie", "nether" ],
+      "friendly": [ "scavenger" ],
   }
 ]
