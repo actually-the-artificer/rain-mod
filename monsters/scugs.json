@@ -212,7 +212,9 @@
         "no_dmg_msg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, but glances off armor!",
         "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
-      }
+      },
+      { "type": "bite", "cooldown": 10 },
+      [ "scratch", 10 ]
     ]
   },
 	{
