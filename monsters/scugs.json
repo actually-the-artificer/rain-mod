@@ -183,7 +183,6 @@
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
       },
       { "type": "bite", "cooldown": 10 },
-      [ "GRAB", 10 ],
       [ "scratch", 10 ]
     ]
   },
@@ -224,6 +223,7 @@
     "description": "The slugcat is near-invisible in the dark, save for its vague outline and piercing white eyes.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears", 100 ] ] },
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
+"reproduction": { "baby_monster": "mon_slugpup_watcher", "baby_count": 2, "baby_timer": 360 },
     "flags": [
       "SEES",
       "SMELLS",
