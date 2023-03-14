@@ -30,7 +30,7 @@
     "aggression": 0,
     "morale": 100,
     "harvest": "slugcat",
-	"dissect": "dissect_slugcat_sample_small",
+    "dissect": "dissect_slugcat_sample_small",
     "//": "TODO: When effects/spells can mess with path settings + flags move smartness to the effect of dedicated coordinatiors",
     "path_settings": { "avoid_sharp": true, "avoid_traps": true, "max_dist": 400 },
     "flags": [ "SEES", "SMELLS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS" ],
@@ -70,7 +70,7 @@
     "aggression": 0,
     "morale": 100,
     "harvest": "slugcat",
-	"dissect": "dissect_slugcat_sample_single",
+    "dissect": "dissect_slugcat_sample_single",
     "//": "TODO: When effects/spells can mess with path settings + flags move smartness to the effect of dedicated coordinatiors",
     "path_settings": { "avoid_sharp": true, "avoid_traps": true, "max_dist": 400 },
     "flags": [ "SEES", "SMELLS", "KEENNOSE", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED" ],
@@ -96,10 +96,7 @@
         "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
       },
-      [
-      "scratch",
-      15
-      ]
+      [ "scratch", 15 ]
     ],
     "reproduction": { "baby_monster": "mon_slugpup_survivor", "baby_count": 2, "baby_timer": 360 },
     "baby_flags": [ "AUTUMN" ]
@@ -123,10 +120,7 @@
         "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
       },
-      [
-      "scratch",
-      15
-      ]
+      [ "scratch", 15 ]
     ]
   },
   {
@@ -135,11 +129,11 @@
     "name": { "str": "monk slugcat" },
     "copy-from": "mon_slugcat_abstract",
     "description": "The skin of this slugcat is off-yellow. It carries a small grenade in one paw.",
-	"death_drops": { "subtype": "collection", "groups": [ [ "slugcat_grenades", 100 ] ] },
-	"color": "yellow",
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_grenades", 100 ] ] },
+    "color": "yellow",
     "aggression": -5,
     "morale": 80,
-	"melee_skill": 2,
+    "melee_skill": 2,
     "melee_dice": 2,
     "melee_dice_sides": 4,
     "reproduction": { "baby_monster": "mon_slugpup_monk", "baby_count": 2, "baby_timer": 360 },
@@ -150,14 +144,14 @@
     "type": "MONSTER",
     "name": { "str": "monk slugpup" },
     "copy-from": "mon_slugpup_abstract",
-	"color": "yellow",
-	"aggression": -5,
+    "color": "yellow",
+    "aggression": -5,
     "morale": 80,
-	"melee_skill": 1,
+    "melee_skill": 1,
     "melee_dice": 1,
     "melee_dice_sides": 4,
     "description": "The skin of this slugpup is a slightly paler yellow than its adult counterpart. It seems flighty.",
-	"death_drops": { "subtype": "collection", "groups": [ [ "slugcat_flashbangs", 100 ] ] }
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_flashbangs", 100 ] ] }
   },
   {
     "id": "mon_slugcat_hunter",
@@ -165,17 +159,17 @@
     "name": { "str": "hunter slugcat" },
     "copy-from": "mon_slugcat_abstract",
     "description": "The skin of this slugcat is a brilliant light red. You notice that it carries its spear slung over its back. It seems more aggressive than others of its kind.",
-	"color": "light_red",
+    "color": "light_red",
     "aggression": 10,
     "morale": 100,
-	"melee_skill": 4,
+    "melee_skill": 4,
     "melee_dice": 2,
     "melee_dice_sides": 8,
-	"dodge": 3,
+    "dodge": 3,
     "reproduction": { "baby_monster": "mon_slugpup_hunter", "baby_count": 2, "baby_timer": 360 },
     "baby_flags": [ "AUTUMN" ],
-    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears_strapped", 100 ] ]  },
-	"anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears_strapped", 100 ] ] },
+    "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
     "special_attacks": [
       {
         "id": "stretch_attack",
@@ -189,14 +183,8 @@
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
       },
       { "type": "bite", "cooldown": 10 },
-      [
-      "GRAB",
-      10
-      ],
-      [
-      "scratch",
-      10
-    ]
+      [ "GRAB", 10 ],
+      [ "scratch", 10 ]
     ]
   },
   {
@@ -205,20 +193,20 @@
     "name": { "str": "hunter slugpup" },
     "copy-from": "mon_slugpup_abstract",
     "description": "A young hunter slugcat, with a spear slung over its back. It scans the landscape for potential threats - or a meal.",
-    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears_strapped", 100 ] ]  },
-	"anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
-	"color": "light_red",
-	"aggression": 5,
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears_strapped", 100 ] ] },
+    "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
+    "color": "light_red",
+    "aggression": 5,
     "morale": 100,
     "melee_skill": 4,
     "melee_dice": 1,
     "melee_dice_sides": 8,
-	"dodge": 3,
+    "dodge": 3,
     "special_attacks": [
       {
         "id": "stretch_attack",
         "cooldown": 10,
-        "range": 2,
+        "range": 1,
         "hit_dmg_u": "%1$s thrusts a spear at your %2$s, stabbing it!",
         "hit_dmg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, stabbing it!",
         "no_dmg_msg_u": "%1$s thrusts a spear at your %2$s, but glances off your armor!",
@@ -226,6 +214,96 @@
         "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
         "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
       }
+    ]
+  },
+	{
+    "id": "mon_slugcat_nightcat",
+    "type": "MONSTER",
+    "name": { "str": "watcher slugcat" },
+    "copy-from": "mon_slugcat_abstract",
+    "description": "The slugcat is near-invisible in the dark, save for its vague outline and piercing white eyes.",
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears", 100 ] ] },
+    "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "HEARS",
+      "PATH_AVOID_DANGER_2",
+      "WARM",
+      "PRIORITIZE_TARGETS",
+      "HIT_AND_RUN",
+      "NIGHT_INVISIBILITY",
+      "CAMOUFLAGE"
+    ],
+    "color": "dark_gray",
+    "aggression": 5,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "dodge": 3,
+    "vision_day": 40,
+    "vision_night": 40,
+    "special_attacks": [
+      {
+        "id": "stretch_attack",
+        "cooldown": 10,
+        "range": 1,
+        "hit_dmg_u": "%1$s thrusts a spear at your %2$s, stabbing it!",
+        "hit_dmg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, stabbing it!",
+        "no_dmg_msg_u": "%1$s thrusts a spear at your %2$s, but glances off your armor!",
+        "no_dmg_msg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, but glances off armor!",
+        "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
+        "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
+      },
+      [ "scratch", 10 ],
+      [ "LUNGE", 1 ]
+    ]
+  },
+  {
+    "id": "mon_slugpup_nightcat",
+    "type": "MONSTER",
+    "name": { "str": "watcher slugpup" },
+    "copy-from": "mon_slugpup_abstract",
+    "description": "The slugpup is near-invisible in the dark, save for its vague outline and piercing white eyes. Being young, its eyes do not seem to be fully developed - but it is still nonetheless capable of night vision.",
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears", 100 ] ] },
+    "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "HEARS",
+      "PATH_AVOID_DANGER_2",
+      "WARM",
+      "PRIORITIZE_TARGETS",
+      "HIT_AND_RUN",
+      "NIGHT_INVISIBILITY",
+      "CAMOUFLAGE"
+    ],
+    "color": "dark_gray",
+    "aggression": 5,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "dodge": 3,
+    "vision_day": 30,
+    "vision_night": 30,
+    "special_attacks": [
+      {
+        "id": "stretch_attack",
+        "cooldown": 10,
+        "range": 1,
+        "hit_dmg_u": "%1$s thrusts a spear at your %2$s, stabbing it!",
+        "hit_dmg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, stabbing it!",
+        "no_dmg_msg_u": "%1$s thrusts a spear at your %2$s, but glances off your armor!",
+        "no_dmg_msg_npc": "%1$s thrusts a spear at <npcname>'s %2$s, but glances off armor!",
+        "miss_msg_u": "%s thrusts a spear at you, but you evade it!",
+        "miss_msg_npc": "%s thrusts a spear at <npcname>, but they evade it!"
+      },
+      [ "scratch", 10 ],
+      [ "LUNGE", 1 ]
     ]
   },
   {
