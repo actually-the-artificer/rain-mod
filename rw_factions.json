@@ -5,7 +5,7 @@
     "base_faction": "animal",
     "by_mood": [ "small_animal", "animal", "human", "scavenger" ],
     "hate": [ "zombie", "nether" ],
-    "friendly": [ "slugcat" ],
+    "friendly": [ "slugcat" ]
   },
     {
     "type": "MONSTER_FACTION",
@@ -13,6 +13,6 @@
     "base_faction": "animal",
     "by_mood": [ "small_animal", "animal", "human", "slugcat" ],
     "hate": [ "zombie", "nether" ],
-      "friendly": [ "scavenger" ],
+      "friendly": [ "scavenger" ]
   }
 ]
