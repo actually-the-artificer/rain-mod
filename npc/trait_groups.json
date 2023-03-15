@@ -11,20 +11,17 @@
 	 {"trait": "SLUGCAT_TAIL_NAT", "prob": 100 },
 	 {"trait": "SLUGCAT_SKIN_NAT", "prob": 100 },
 	 {"trait": "STOMACH_CONT", "prob": 100 },
-     {"trait": "BENDY1", "prob": 100 },
-	 {"trait": "HUNGER", "prob": 100 },
 	 {"trait": "FAST_REFLEXES", "prob": 100 },
 	 {"trait": "PAINREC1", "prob": 100 },
 	 {"trait": "INT_UP", "prob": 100 },
 	 {"trait": "DEX_UP_2", "prob": 100 },
 	 {"trait": "CRAFTY", "prob": 100 },
 	 {"trait": "ANIMALDISCORD2", "prob": 100 },
-	 {"trait": "LIGHT_BONES", "prob": 100 },
-	 {"trait": "FLEET", "prob": 100 },
+	 {"trait": "HOLLOW_BONES", "prob": 100 },
 	 {"trait": "SLIMY", "prob": 100 },
 	 {"trait": "GOODCARDIO", "prob": 100 },
 	 {"trait": "NO_THIRST", "prob": 100 },
-	 {"trait": "FLIMSY3", "prob": 100 }
+	 {"trait": "FLIMSY2", "prob": 100 }
     ]
   },
   {
@@ -39,18 +36,17 @@
 	 {"trait": "SLUGCAT_TAIL_NAT", "prob": 100 },
 	 {"trait": "SLUGCAT_SKIN_NAT", "prob": 100 },
 	 {"trait": "STOMACH_CONT", "prob": 100 },
-	 {"trait": "HUNGER", "prob": 100 },
+	 {"trait": "LIGHTEATER", "prob": 100 },
 	 {"trait": "FAST_REFLEXES", "prob": 100 },
 	 {"trait": "PAINREC1", "prob": 100 },
 	 {"trait": "DEX_UP_2", "prob": 100 },
 	 {"trait": "CRAFTY", "prob": 100 },
 	 {"trait": "ANIMALDISCORD2", "prob": 100 },
-	 {"trait": "LIGHT_BONES", "prob": 100 },
-	 {"trait": "FLEET", "prob": 100 },
+	 {"trait": "HOLLOW_BONES", "prob": 100 },
 	 {"trait": "SLIMY", "prob": 100 },
 	 {"trait": "GOODCARDIO", "prob": 100 },
 	 {"trait": "NO_THIRST", "prob": 100 },
-	 {"trait": "FLIMSY3", "prob": 100 },
+	 {"trait": "FLIMSY2", "prob": 100 },
 	 {"trait": "ANIMALEMPATH2", "prob": 100 },
 	 {"trait": "PRETTY", "prob": 100 },
 	 {"trait": "PACIFIST", "prob": 100 }
@@ -83,6 +79,32 @@
 	 {"trait": "ROT2", "prob": 100 },
 	 {"trait": "CARNIVORE", "prob": 100 },
 	 {"trait": "FANGS", "prob": 100 }
+    ]
+  },
+	  {
+    "type": "trait_group",
+    "id": "trait_group_nightcat",
+    "subtype": "collection",
+    "traits": [
+	{"trait": "BGSS_Slugcat_1", "prob": 100 },
+	{"trait": "THRESH_SLUGCAT_NAT", "prob": 100 },
+     {"trait": "SLUGCAT_EARS_NAT", "prob": 100 },
+	 {"trait": "SLUGCAT_EYES_NAT", "prob": 100 },
+	 {"trait": "SLUGCAT_TAIL_NAT", "prob": 100 },
+	 {"trait": "SLUGCAT_SKIN_NAT", "prob": 100 },
+	 {"trait": "STOMACH_CONT", "prob": 100 },
+	 {"trait": "FAST_REFLEXES", "prob": 100 },
+	 {"trait": "PAINREC1", "prob": 100 },
+	 {"trait": "INT_UP", "prob": 100 },
+	 {"trait": "DEX_UP_2", "prob": 100 },
+	 {"trait": "CRAFTY", "prob": 100 },
+	 {"trait": "ANIMALDISCORD2", "prob": 100 },
+	 {"trait": "HOLLOW_BONES", "prob": 100 },
+	 {"trait": "SLIMY", "prob": 100 },
+	 {"trait": "GOODCARDIO", "prob": 100 },
+	 {"trait": "NO_THIRST", "prob": 100 },
+	 {"trait": "FLIMSY2", "prob": 100 },
+	    {"trait": "NIGHTVISION3", "prob": 100 }
     ]
   },
     {
