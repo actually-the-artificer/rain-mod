@@ -18,10 +18,37 @@
     "valid": false,
     "purifiable": false,
     "threshold": true,
-	"vitamin_rates": [[ "mutagen", 5000 ], [ "mutagen_alpha", 5000 ], [ "mutagen_batrachian", 5000 ], [ "mutagen_beast", 5000 ], [ "mutagen_bird", 5000 ], [ "mutagen_cattle", 5000 ], [ "mutagen_cephalopod", 5000 ], [ "mutagen_chimera", 5000 ], [ "mutagen_elfa", 5000 ], [ "mutagen_feline", 5000 ], [ "mutagen_fish", 5000 ], [ "mutagen_gastropod", 5000 ], [ "mutagen_human", 5000 ], [ "mutagen_insect", 5000 ], [ "mutagen_lizard", 5000 ], [ "mutagen_lupine", 5000 ], [ "mutagen_medical", 5000 ], [ "mutagen_mouse", 5000 ], [ "mutagen_plant", 5000 ], [ "mutagen_rabbit", 5000 ], [ "mutagen_raptor", 5000 ], [ "mutagen_rat", 5000 ], [ "mutagen_slime", 5000 ], [ "mutagen_slugcat", 5000 ], [ "mutagen_spider", 5000 ], [ "mutagen_snail", 5000 ], [ "mutagen_troglobite", 5000 ], [ "mutagen_ursine", 5000 ]],
-	"flags": [
-    "CANNIBAL"
-	]
+    "vitamin_rates": [
+      [ "mutagen", 5000 ],
+      [ "mutagen_alpha", 5000 ],
+      [ "mutagen_batrachian", 5000 ],
+      [ "mutagen_beast", 5000 ],
+      [ "mutagen_bird", 5000 ],
+      [ "mutagen_cattle", 5000 ],
+      [ "mutagen_cephalopod", 5000 ],
+      [ "mutagen_chimera", 5000 ],
+      [ "mutagen_elfa", 5000 ],
+      [ "mutagen_feline", 5000 ],
+      [ "mutagen_fish", 5000 ],
+      [ "mutagen_gastropod", 5000 ],
+      [ "mutagen_human", 5000 ],
+      [ "mutagen_insect", 5000 ],
+      [ "mutagen_lizard", 5000 ],
+      [ "mutagen_lupine", 5000 ],
+      [ "mutagen_medical", 5000 ],
+      [ "mutagen_mouse", 5000 ],
+      [ "mutagen_plant", 5000 ],
+      [ "mutagen_rabbit", 5000 ],
+      [ "mutagen_raptor", 5000 ],
+      [ "mutagen_rat", 5000 ],
+      [ "mutagen_slime", 5000 ],
+      [ "mutagen_slugcat", 5000 ],
+      [ "mutagen_spider", 5000 ],
+      [ "mutagen_snail", 5000 ],
+      [ "mutagen_troglobite", 5000 ],
+      [ "mutagen_ursine", 5000 ]
+    ],
+    "flags": [ "CANNIBAL" ]
   },
   {
     "type": "mutation",
@@ -179,7 +206,7 @@
     "copy-from": "PRETTY",
     "extend": { "category": [ "SLUGCAT_NAT" ] }
   },
-    {
+  {
     "type": "mutation",
     "id": "HUNGER",
     "copy-from": "HUNGER",
@@ -221,13 +248,13 @@
     "copy-from": "FLEET2",
     "extend": { "category": [ "SLUGCAT" ] }
   },
-    {
+  {
     "type": "mutation",
     "id": "FLIMSY",
     "copy-from": "FLIMSY",
     "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
   },
-    {
+  {
     "type": "mutation",
     "id": "FLIMSY2",
     "copy-from": "FLIMSY2",
@@ -370,7 +397,7 @@
     "copy-from": "ROT2",
     "extend": { "category": [ "SLUGCAT_NAT" ] }
   },
-    {
+  {
     "type": "mutation",
     "id": "FANGS",
     "copy-from": "FANGS",
@@ -406,5 +433,23 @@
     "description": "Your stomach has become a container that can store small objects.",
     "category": [ "SLUGCAT", "SLUGCAT_NAT" ],
     "integrated_armor": [ "integrated_stomach" ]
+  },
+  {
+    "type": "mutation",
+    "id": "NIGHTVISION",
+    "copy-from": "NIGHTVISION",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "NIGHTVISION2",
+    "copy-from": "NIGHTVISION2",
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "NIGHTVISION3",
+    "copy-from": "NIGHTVISION3",
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
   }
 ]
