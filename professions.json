@@ -104,6 +104,37 @@
     ],
     "flags": [ "SCEN_ONLY" ]
   },
+    {
+    "type": "profession",
+    "id": "native_slugcat_nightcat",
+    "name": "Native Slugcat (Watcher)",
+    "description": "You hailed from a world with constant torrential rains. Stealth and avoidance will protect you in these hostile lands.",
+    "points": 5,
+    "skills": [ { "level": 4, "name": "swimming" }, { "level": 4, "name": "dodge" } ],
+    "items": { "both": { "items": [ "pointed_rebar" ] } },
+    "traits": [
+      "THRESH_SLUGCAT_NAT",
+      "SLUGCAT_EARS_NAT",
+      "SLUGCAT_EYES_NAT",
+      "SLUGCAT_TAIL_NAT",
+      "SLUGCAT_SKIN_NAT",
+      "STOMACH_CONT",
+      "HUNGER",
+      "FAST_REFLEXES",
+      "PAINREC1",
+      "DEX_UP_2",
+      "CRAFTY",
+      "ANIMALDISCORD2",
+      "HOLLOW_BONES",
+      "SLIMY",
+      "GOODCARDIO",
+      "NIGHTVISION3",
+      "NO_THIRST",
+      "CLAWS",
+      "FLIMSY2"
+    ],
+    "flags": [ "SCEN_ONLY" ]
+  },
   {
     "type": "profession",
     "id": "mutant_slugcat",
