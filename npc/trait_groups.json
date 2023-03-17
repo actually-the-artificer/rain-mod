@@ -102,7 +102,7 @@
 	 {"trait": "HOLLOW_BONES", "prob": 100 },
 	 {"trait": "SLIMY", "prob": 100 },
 	 {"trait": "GOODCARDIO", "prob": 100 },
-	    {"trait": "TROGLO", "prob": 100 },
+	    {"trait": "TROGLO2", "prob": 100 },
 	 {"trait": "NO_THIRST", "prob": 100 },
 	 {"trait": "FLIMSY2", "prob": 100 },
 	    {"trait": "NIGHTVISION3", "prob": 100 }
