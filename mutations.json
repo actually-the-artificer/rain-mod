@@ -469,7 +469,23 @@
     "copy-from": "TROGLO",
     "name": { "str": "Light Sensitive" },  
     "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
-  }m
+  },
+      {
+    "type": "mutation",
+    "id": "SLUGCAT_WEBBED_FEET_NAT",
+    "copy-from": "WEBBED_FEET",
+    "name": { "str": "Webbed Feet" },  
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_WEBBED_HANDS_NAT",
+    "copy-from": "WEBBED",
+    "name": { "str": "Webbed Hands" },
+    "visibility": 2,
+    "ugliness": 0,
+    "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
   {
     "type": "mutation",
     "id": "SLUGCAT_LIGHTAVERSE",
