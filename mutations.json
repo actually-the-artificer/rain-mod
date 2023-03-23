@@ -443,7 +443,7 @@
     "visibility": 2,
     "ugliness": 0,
     "description": "Two sets of gills extend out from the side of your face. They look similar to pink whiskers.",
-    "category": [ "SLUGCAT_NAT" ]
+    "extend": { "category": [ "SLUGCAT_NAT" ], "threshreq": [ "THRESH_SLUGCAT_NAT" ] }
   },
   {
     "type": "mutation",
