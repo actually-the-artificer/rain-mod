@@ -9,18 +9,12 @@
     "start_name": "Field",
     "allowed_locs": [ "sloc_field" ],
     "eoc": [ "scenario_strong_portal_storm" ],
-	"professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "native_slugcat_nightcat", "mutant_slugcat" ]
+	"professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "native_slugcat_nightcat", "native_slugcat_rivulet", "mutant_slugcat" ]
   },
   {
     "copy-from": "portal_dependent",
     "type": "scenario",
-    "extend": { "professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "native_slugcat_nightcat", "mutant_slugcat" ] },
+    "extend": { "professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "native_slugcat_nightcat", "native_slugcat_rivulet", "mutant_slugcat" ] },
     "id": "portal_dependent"
-  },
-  {
-    "copy-from": "lab_chal",
-    "type": "scenario",
-    "extend": { "professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "native_slugcat_nightcat", "mutant_slugcat" ] },
-    "id": "lab_chal"
   }
 ]
