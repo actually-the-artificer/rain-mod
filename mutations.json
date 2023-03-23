@@ -436,6 +436,17 @@
   },
   {
     "type": "mutation",
+    "id": "SLUGCAT_GILLS_NAT",
+    "name": { "str": "Primitive Gills" },
+    "copy-from": "GILLS",
+    "points": 1,
+    "visibility": 2,
+    "ugliness": 0,
+    "description": "Two sets of gills extend out from the side of your face. They look similar to pink whiskers.",
+    "category": [ "SLUGCAT_NAT" ]
+  },
+  {
+    "type": "mutation",
     "id": "NIGHTVISION",
     "copy-from": "NIGHTVISION",
     "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
@@ -451,5 +462,12 @@
     "id": "NIGHTVISION3",
     "copy-from": "NIGHTVISION3",
     "extend": { "category": [ "SLUGCAT_NAT" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SLUGCAT_LIGHTAVERSE",
+    "copy-from": "TROGLO2",
+    "name": { "str": "Light Sensitive" },  
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
   }
 ]
