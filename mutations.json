@@ -463,6 +463,13 @@
     "copy-from": "NIGHTVISION3",
     "extend": { "category": [ "SLUGCAT_NAT" ] }
   },
+    {
+    "type": "mutation",
+    "id": "TROGLO",
+    "copy-from": "TROGLO",
+    "name": { "str": "Light Sensitive" },  
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+  }m
   {
     "type": "mutation",
     "id": "SLUGCAT_LIGHTAVERSE",
