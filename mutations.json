@@ -437,7 +437,7 @@
   {
     "type": "mutation",
     "id": "SLUGCAT_GILLS_NAT",
-    "name": { "str": "Primitive Gills" },
+    "name": { "str": "Slugcat Gills" },
     "copy-from": "GILLS",
     "points": 1,
     "visibility": 2,
