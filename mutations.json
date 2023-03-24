@@ -475,6 +475,9 @@
     "id": "SLUGCAT_WEBBED_FEET_NAT",
     "copy-from": "WEBBED_FEET",
     "name": { "str": "Webbed Feet" },
+          "prereqs": [
+    "SLUGCAT_WEBBED_HANDS_NAT"
+  ],
     "extend": { "category": [ "SLUGCAT_NAT" ] }
   },
   {
@@ -491,6 +494,9 @@
     "id": "SLUGCAT_LIGHTAVERSE",
     "copy-from": "TROGLO2",
     "name": { "str": "Light Sensitive" },
+      "prereqs": [
+    "TROGLO"
+  ],
     "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
   }
 ]
