@@ -463,18 +463,18 @@
     "copy-from": "NIGHTVISION3",
     "extend": { "category": [ "SLUGCAT_NAT" ] }
   },
-    {
+  {
     "type": "mutation",
     "id": "TROGLO",
     "copy-from": "TROGLO",
-    "name": { "str": "Light Sensitive" },  
-    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
+    "name": { "str": "Light Sensitive" },
+    "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ], "changes_to": [ "SLUGCAT_LIGHTAVERSE" ] }
   },
-      {
+  {
     "type": "mutation",
     "id": "SLUGCAT_WEBBED_FEET_NAT",
     "copy-from": "WEBBED_FEET",
-    "name": { "str": "Webbed Feet" },  
+    "name": { "str": "Webbed Feet" },
     "extend": { "category": [ "SLUGCAT_NAT" ] }
   },
   {
@@ -490,7 +490,7 @@
     "type": "mutation",
     "id": "SLUGCAT_LIGHTAVERSE",
     "copy-from": "TROGLO2",
-    "name": { "str": "Light Sensitive" },  
+    "name": { "str": "Light Sensitive" },
     "extend": { "category": [ "SLUGCAT", "SLUGCAT_NAT" ] }
   }
 ]
