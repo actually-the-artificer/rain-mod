@@ -472,16 +472,6 @@
   },
   {
     "type": "mutation",
-    "id": "SLUGCAT_WEBBED_FEET_NAT",
-    "copy-from": "WEBBED_FEET",
-    "name": { "str": "Webbed Feet" },
-          "prereqs": [
-    "SLUGCAT_WEBBED_HANDS_NAT"
-  ],
-    "extend": { "category": [ "SLUGCAT_NAT" ] }
-  },
-  {
-    "type": "mutation",
     "id": "SLUGCAT_WEBBED_HANDS_NAT",
     "copy-from": "WEBBED",
     "name": { "str": "Webbed Hands" },
