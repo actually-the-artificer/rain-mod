@@ -1,4 +1,4 @@
-[  
+[
   {
     "id": "flashbang_fruit",
     "type": "TOOL",
@@ -46,31 +46,31 @@
     "id": "explosive_powder",
     "type": "GENERIC",
     "name": { "str": "explosive powder" },
-	"weight": "250 g",
+    "weight": "250 g",
     "volume": "250 ml",
     "price": 2000,
     "price_postapoc": 500,
-	"charges": 100,
+    "charges": 100,
     "to_hit": -4,
     "material": [ "powder" ],
     "symbol": "!",
     "color": "red",
     "description": "A highly-reactive dark red powder. It turns a gel-like consistency when mixed with water."
   },
-      {
+  {
     "id": "explosive_powder_paste",
-	"type": "GENERIC",
+    "type": "GENERIC",
     "name": { "str": "explosive paste" },
-	"copy-from": "explosive_powder",
+    "copy-from": "explosive_powder",
     "description": "This explosive powder has been mixed with water, turning it the consistency of putty. It can be used to coat things, if you're feeling desperate."
   },
   {
     "id": "gel_grenade",
-	"type": "TOOL",
-	"category": "weapons",
+    "type": "TOOL",
+    "category": "weapons",
     "name": { "str": "gel grenade", "str_pl": "gel grenades" },
-	"description": "A grenade made by combining a roughly spherical object with explosive paste. Highly sensitive; handle with care.",
-	"weight": "250 g",
+    "description": "A grenade made by combining a roughly spherical object with explosive paste. Highly sensitive; handle with care.",
+    "weight": "250 g",
     "volume": "250 ml",
     "price": 0,
     "price_postapoc": 0,
@@ -79,7 +79,7 @@
     "material": [ "stone", "powder" ],
     "symbol": "o",
     "color": "red",
-	"use_action": {
+    "use_action": {
       "need_wielding": true,
       "target": "gel_grenade_act",
       "msg": "You prime the gel grenade.",
@@ -88,16 +88,16 @@
       "menu_text": "Prime",
       "type": "transform"
     },
-	"flags": [ "BOMB" ]
+    "flags": [ "BOMB" ]
   },
-    {
+  {
     "id": "gel_grenade_act",
     "type": "TOOL",
     "category": "weapons",
-	"name": { "str": "gel grenade", "str_pl": "gel grenades" },
-	"copy-from": "gel_grenade",
-	"description": "A grenade made by combining a roughly spherical object with explosive paste. Highly sensitive; handle with care. This one is about to blow!",
-	"initial_charges": 0,
+    "name": { "str": "gel grenade", "str_pl": "gel grenades" },
+    "copy-from": "gel_grenade",
+    "description": "A grenade made by combining a roughly spherical object with explosive paste. Highly sensitive; handle with care. This one is about to blow!",
+    "initial_charges": 0,
     "max_charges": 0,
     "turns_per_charge": 1,
     "use_action": {
@@ -107,9 +107,9 @@
       "no_deactivate_msg": "You've already primed the %s, try throwing it instead.",
       "explosion": { "power": 200 }
     },
-	"flags": [ "TRADER_AVOID", "BOMB" ]
+    "flags": [ "TRADER_AVOID", "BOMB" ]
   },
-    {
+  {
     "id": "iv_mutagen_slugcat",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
@@ -150,7 +150,7 @@
     "id": "insecticidalsporebomb",
     "type": "GENERIC",
     "name": { "str": "insecticidal spore cluster" },
-	"weight": "150 g",
+    "weight": "150 g",
     "volume": "250 ml",
     "price": 2000,
     "price_postapoc": 500,
@@ -164,7 +164,7 @@
       "menu_text": "Prime",
       "msg": "You prime the spore puff.",
       "type": "transform",
-	  "target_charges": 0,
+      "target_charges": 0,
       "target": "insecticidalsporebomb_act"
     }
   },
@@ -172,13 +172,13 @@
     "id": "insecticidalsporebomb_act",
     "type": "GENERIC",
     "name": { "str": "armed insecticidal spore cluster" },
-	"copy-from": "insecticidalsporebomb",
+    "copy-from": "insecticidalsporebomb",
     "description": "This insecticidal spore cluster is expelling highly toxic haze.",
-	"initial_charges": 0,
+    "initial_charges": 0,
     "max_charges": 0,
     "turns_per_charge": 1,
     "emits": [ "emit_insecticidal_stream" ],
-	"countdown_interval": 100
+    "countdown_interval": 100
   },
   {
     "id": "scav_pistol_item",
@@ -202,16 +202,53 @@
     "dispersion": 800,
     "durability": 4,
     "min_cycle_recoil": 450,
-	"faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
     "flags": [ "RELOAD_ONE" ],
-	"blackpowder_tolerance": 56,
-	"reload": 300,
-    "pocket_data": [
-      {
-        "pocket_type": "MAGAZINE",
-        "rigid": true,
-        "ammo_restriction": { "flintlock": 6 }
-      }
-    ]
+    "blackpowder_tolerance": 56,
+    "reload": 300,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "flintlock": 6 } } ]
+  },
+  {
+    "id": "spear_explosive",
+    "type": "TOOL",
+    "category": "WEAPONS",
+    "name": { "str": "explosive spear" },
+    "weight": "1250 g",
+    "volume": "160 ml",
+    "price": 2000,
+    "price_postapoc": 500,
+    "longest_side": "80 cm",
+    "bashing": 9,
+    "cutting": 4,
+    "to_hit": -1,
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "description": "A piece of sharp rebar wrapped with smoldering red ribbon.",
+    "use_action": {
+      "need_wielding": true,
+      "menu_text": "Prime",
+      "msg": "You prime the explosive spear.",
+      "type": "transform",
+      "target_charges": 0,
+      "target": "spear_explosive_act"
+    }
+  },
+  {
+    "id": "spear_explosive_act",
+    "type": "GENERIC",
+    "name": { "str": "armed explosive spear" },
+    "copy-from": "spear_explosive",
+    "description": "This spear's red ribbon sparks and smoulders. It looks as if can explode any time soon - better throw it!",
+    "initial_charges": 0,
+    "max_charges": 0,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "fzzt",
+      "no_deactivate_msg": "You've already primed the %s, try throwing it instead.",
+      "explosion": { "power": 175 }
+    }
   }
 ]
