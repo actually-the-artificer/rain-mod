@@ -21,19 +21,6 @@
         { "one_in_chance": 1 }
       ]
     },
-    "deactivate_condition": {
-      "not": {
-        "or": [
-          { "is_weather": "sunny" },
-          { "is_weather": "cloudy" },
-          { "is_weather": "flurries" },
-          { "is_weather": "snowing" },
-          { "is_weather": "snowstorm" },
-          { "is_weather": "early_portal_storm" },
-		  { "is_weather": "portal_storm" }
-        ]
-      }
-    },
     "effect": [ 
 	{ "u_message": "The rains will wash you away! You need to find shelter, and fast!", "type": "bad" },
 	{
