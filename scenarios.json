@@ -16,5 +16,11 @@
     "type": "scenario",
     "extend": { "professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "native_slugcat_nightcat", "native_slugcat_rivulet", "mutant_slugcat" ] },
     "id": "portal_dependent"
+  },
+	{
+    "copy-from": "hunted_start",
+    "type": "scenario",
+    "extend": { "professions": [ "native_slugcat_survivor", "native_slugcat_monk", "native_slugcat_hunter", "native_slugcat_nightcat", "native_slugcat_rivulet", "mutant_slugcat" ] },
+    "id": "hunted_start"
   }
 ]
