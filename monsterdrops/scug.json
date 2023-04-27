@@ -44,15 +44,28 @@
   {
     "type": "item_group",
     "subtype": "collection",
-    "id": "slugcat_guns",
+    "id": "slugcat_guns_rifle",
     "entries": [
       {
         "distribution": [
           { "item": "rifle_22", "prob": 25 },
-          { "item": "rifle_9mm", "prob": 15 },
-          { "item": "rifle_40", "prob": 10 },
-          { "item": "rifle_38", "prob": 20 },
-          { "item": "slamfire_shotgun", "prob": 30 }
+          { "item": "rifle_9mm", "prob": 25 },
+          { "item": "rifle_38", "prob": 50 }
+        ]
+      }
+    ]
+  },
+   {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slugcat_guns_shotgun",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "pipe_shotgun", "prob": 25 },
+          { "item": "slamfire_shotgun", "prob": 25 },
+          { "item": "pipe_double_shotgun", "prob": 25 },
+          { "item": "slamfire_shotgun_d", "prob": 25 }
         ]
       }
     ]
