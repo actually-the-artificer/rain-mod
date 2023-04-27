@@ -17,26 +17,13 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "slugcat_grenades",
-    "entries": [
-      {
-        "distribution": [
-          { "item": "flashbang_fruit", "prob": 25},
-          { "item": "gel_grenade", "prob": 75 }
-        ]
-      }
-    ]
+    "entries": [ { "distribution": [ { "item": "flashbang_fruit", "prob": 25 }, { "item": "gel_grenade", "prob": 75 } ] } ]
   },
-    {
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "slugcat_flashbangs",
-    "entries": [
-      {
-        "distribution": [
-          { "item": "flashbang_fruit", "prob": 100 }
-        ]
-      }
-    ]
+    "entries": [ { "distribution": [ { "item": "flashbang_fruit", "prob": 100 } ] } ]
   },
   {
     "type": "item_group",
@@ -50,7 +37,23 @@
           { "item": "sharp_rebar", "prob": 25 },
           { "item": "pointed_rebar", "prob": 50 }
         ],
-	"prob": 100
+        "prob": 100
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "slugcat_guns",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "rifle_22", "prob": 25 },
+          { "item": "rifle_9mm", "prob": 15 },
+          { "item": "rifle_40", "prob": 10 },
+          { "item": "rifle_38", "prob": 20 },
+          { "item": "slamfire_shotgun", "prob": 30 }
+        ]
       }
     ]
   }
