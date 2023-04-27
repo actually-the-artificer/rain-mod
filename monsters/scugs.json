@@ -217,7 +217,7 @@
       [ "scratch", 10 ]
     ]
   },
-	{
+  {
     "id": "mon_slugcat_nightcat",
     "type": "MONSTER",
     "name": { "str": "watcher slugcat" },
@@ -225,7 +225,7 @@
     "description": "The slugcat is near-invisible in the dark, save for its vague outline and piercing white eyes.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears", 100 ] ] },
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
-"reproduction": { "baby_monster": "mon_slugpup_nightcat", "baby_count": 2, "baby_timer": 360 },
+    "reproduction": { "baby_monster": "mon_slugpup_nightcat", "baby_count": 2, "baby_timer": 360 },
     "flags": [
       "SEES",
       "SMELLS",
@@ -339,5 +339,131 @@
     "anger_triggers": [ "HOSTILE_SEEN", "HURT", "FRIEND_ATTACKED" ],
     "fear_triggers": [ "FIRE" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER_1", "FILTHY", "WARM" ]
+  },
+  {
+    "id": "mon_slugcat_rifle",
+    "type": "MONSTER",
+    "name": { "str": "riflescug" },
+    "copy-from": "mon_slugcat_abstract",
+    "description": "This slugcat clutches a crude rifle in its paws. Its head swievels occasionally, scanning the horizon for threats.",
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_guns_rifle", 100 ] ] },
+    "color": "white",
+    "aggression": 0,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "reproduction": { "baby_monster": "mon_slugpup_rifle", "baby_count": 3, "baby_timer": 60 },
+    "starting_ammo": { "bp_9mm": 6 },
+    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "DROPS_AMMO", "STALK" ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 150,
+        "gun_type": "rifle_9mm",
+        "ammo_type": "9mm",
+        "fake_skills": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+        "fake_dex": 10,
+        "fake_per": 8,
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "The slugcat fires their makeshift rifle!"
+      }
+    ]
+  },
+  {
+    "id": "mon_slugpup_rifle",
+    "type": "MONSTER",
+    "name": { "str": "riflepup" },
+    "copy-from": "mon_slugpup_abstract",
+    "color": "brown",
+    "aggression": 0,
+    "morale": 80,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "description": "This young slugcat wields a crude carbine. While it is seemingly not proficent with its weapon, it is still quite dangerous.",
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_guns_rifle", 100 ] ] },
+    "starting_ammo": { "bp_9mm": 6 },
+    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO", "STALK" ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 150,
+        "gun_type": "rifle_9mm",
+        "ammo_type": "9mm",
+        "fake_skills": [ [ "gun", 1 ] ],
+        "fake_dex": 9,
+        "fake_per": 7,
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "The slugpup fires their crude rifle!"
+      }
+    ]
+  },
+  {
+    "id": "mon_slugcat_shotgun",
+    "type": "MONSTER",
+    "name": { "str": "slugcat shotgunner" },
+    "copy-from": "mon_slugcat_abstract",
+    "description": "This slugcat clutches a crude shotgun in its paws. Its head swievels occasionally, scanning the horizon for threats.",
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_guns_shotgun", 100 ] ] },
+    "color": "white",
+    "aggression": 0,
+    "morale": 100,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 4,
+    "reproduction": { "baby_monster": "mon_slugpup_shotgun", "baby_count": 3, "baby_timer": 60 },
+    "starting_ammo": { "bp_shot_scrap": 6 },
+    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "DROPS_AMMO", "STALK" ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 150,
+        "gun_type": "slamfire_shotgun",
+        "ammo_type": "shot",
+        "fake_skills": [ [ "gun", 1 ], [ "shotgun", 1 ] ],
+        "fake_dex": 10,
+        "fake_per": 8,
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "The slugcat fires their makeshift shotgun!"
+      }
+    ]
+  },
+  {
+    "id": "mon_slugpup_shotgun",
+    "type": "MONSTER",
+    "name": { "str": "slugpup shotgunner" },
+    "copy-from": "mon_slugpup_abstract",
+    "color": "white",
+    "aggression": 0,
+    "morale": 80,
+    "melee_skill": 1,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "description": "This young slugcat wields a crude shotgun. While it is seemingly not proficent with its weapon, it is still quite dangerous.",
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_guns_shotgun", 100 ] ] },
+    "starting_ammo": { "bp_shot_scrap": 6 },
+    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO", "STALK" ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 150,
+        "gun_type": "slamfire_shotgun",
+        "ammo_type": "shot",
+        "fake_skills": [ [ "gun", 1 ] ],
+        "fake_dex": 9,
+        "fake_per": 7,
+        "ranges": [ [ 2, 10, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "The slugpup fires their makeshift shotgun!"
+      }
+    ]
   }
 ]
