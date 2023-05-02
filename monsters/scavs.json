@@ -186,7 +186,7 @@
 	"death_drops": { "subtype": "collection", "groups": [ [ "scav_pistols", 100 ] ] },
 	"starting_ammo": { "flintlock_ammo": 6 },
 	    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO" ],
-	  "upgrades": { "age_grow": 30, "into": "mon_scavenger_gunslinger" },
+	  "upgrades": { "age_grow": 30, "into": "mon_scav_gunslinger" },
     "special_attacks": [
       {
         "type": "gun",
@@ -250,7 +250,7 @@
 	"death_drops": { "subtype": "collection", "groups": [ [ "scav_carbines", 100 ] ] },
 	"starting_ammo": { "flintlock_ammo": 6 },
 	    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO" ],
-	  "upgrades": { "age_grow": 30, "into": "mon_scavenger_musketeer" },
+	  "upgrades": { "age_grow": 30, "into": "mon_scav_musketeer" },
     "special_attacks": [
       {
         "type": "gun",
