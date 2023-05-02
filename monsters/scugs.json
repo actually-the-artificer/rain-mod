@@ -108,6 +108,7 @@
     "copy-from": "mon_slugpup_abstract",
     "description": "A young creamy-white slugcat, not yet fully grown. It grasps a spear in one paw as it examines its surrounding with an uncanny curiosity.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears", 100 ] ] },
+    "upgrades": { "age_grow": 30, "into": "mon_slugcat_survivor" },
     "special_attacks": [
       {
         "id": "stretch_attack",
@@ -151,7 +152,8 @@
     "melee_dice": 1,
     "melee_dice_sides": 4,
     "description": "The skin of this slugpup is a slightly paler yellow than its adult counterpart. It seems flighty.",
-    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_flashbangs", 100 ] ] }
+    "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_flashbangs", 100 ] ] },
+    "upgrades": { "age_grow": 30, "into": "mon_slugcat_monk" },
   },
   {
     "id": "mon_slugcat_hunter",
@@ -194,6 +196,7 @@
     "description": "A young hunter slugcat, with a spear slung over its back. It scans the landscape for potential threats - or a meal.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears_strapped", 100 ] ] },
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
+    "upgrades": { "age_grow": 30, "into": "mon_slugcat_hunter" },
     "color": "light_red",
     "aggression": 5,
     "morale": 100,
@@ -270,6 +273,7 @@
     "description": "The slugpup is near-invisible in the dark, save for its vague outline and piercing white eyes. Being young, its eyes do not seem to be fully developed - but it is still nonetheless capable of night vision.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears", 100 ] ] },
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
+    "upgrades": { "age_grow": 30, "into": "mon_slugcat_nightcat" },
     "flags": [
       "SEES",
       "SMELLS",
@@ -390,6 +394,7 @@
     "starting_ammo": { "bp_22_lr": 6 },
     "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO" ],
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "STALK" ],
+    "upgrades": { "age_grow": 30, "into": "mon_slugcat_rifle" },
     "fear_triggers": [ "FIRE" ],
     "special_attacks": [
       {
@@ -458,6 +463,7 @@
     "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO" ],
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "STALK" ],
     "fear_triggers": [ "FIRE" ],
+    "upgrades": { "age_grow": 30, "into": "mon_slugcat_shotgun" },
     "special_attacks": [
       {
         "type": "gun",
