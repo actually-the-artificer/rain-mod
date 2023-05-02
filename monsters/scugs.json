@@ -98,8 +98,8 @@
       },
       [ "scratch", 15 ]
     ],
-    "reproduction": { "baby_monster": "mon_slugpup_survivor", "baby_count": 2, "baby_timer": 360 },
-    "baby_flags": [ "AUTUMN" ]
+    "reproduction": { "baby_monster": "mon_slugpup_survivor", "baby_count": 2, "baby_timer": 120 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ]
   },
   {
     "id": "mon_slugpup_survivor",
@@ -137,8 +137,8 @@
     "melee_skill": 2,
     "melee_dice": 2,
     "melee_dice_sides": 4,
-    "reproduction": { "baby_monster": "mon_slugpup_monk", "baby_count": 2, "baby_timer": 360 },
-    "baby_flags": [ "AUTUMN" ]
+    "reproduction": { "baby_monster": "mon_slugpup_monk", "baby_count": 2, "baby_timer": 120 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ]
   },
   {
     "id": "mon_slugpup_monk",
@@ -153,7 +153,7 @@
     "melee_dice_sides": 4,
     "description": "The skin of this slugpup is a slightly paler yellow than its adult counterpart. It seems flighty.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_flashbangs", 100 ] ] },
-    "upgrades": { "age_grow": 30, "into": "mon_slugcat_monk" },
+    "upgrades": { "age_grow": 30, "into": "mon_slugcat_monk" }
   },
   {
     "id": "mon_slugcat_hunter",
@@ -168,8 +168,8 @@
     "melee_dice": 2,
     "melee_dice_sides": 8,
     "dodge": 3,
-    "reproduction": { "baby_monster": "mon_slugpup_hunter", "baby_count": 2, "baby_timer": 360 },
-    "baby_flags": [ "AUTUMN" ],
+    "reproduction": { "baby_monster": "mon_slugpup_hunter", "baby_count": 2, "baby_timer": 120 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears_strapped", 100 ] ] },
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
     "special_attacks": [
@@ -228,7 +228,8 @@
     "description": "The slugcat is near-invisible in the dark, save for its vague outline and piercing white eyes.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_spears", 100 ] ] },
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
-    "reproduction": { "baby_monster": "mon_slugpup_nightcat", "baby_count": 2, "baby_timer": 360 },
+    "reproduction": { "baby_monster": "mon_slugpup_nightcat", "baby_count": 2, "baby_timer": 120 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "flags": [
       "SEES",
       "SMELLS",
@@ -357,7 +358,8 @@
     "melee_skill": 2,
     "melee_dice": 2,
     "melee_dice_sides": 4,
-    "reproduction": { "baby_monster": "mon_slugpup_rifle", "baby_count": 3, "baby_timer": 60 },
+    "reproduction": { "baby_monster": "mon_slugpup_rifle", "baby_count": 2, "baby_timer": 20 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "starting_ammo": { "bp_38_special": 6 },
     "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "DROPS_AMMO" ],
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "STALK" ],
@@ -425,7 +427,8 @@
     "melee_skill": 2,
     "melee_dice": 2,
     "melee_dice_sides": 4,
-    "reproduction": { "baby_monster": "mon_slugpup_shotgun", "baby_count": 3, "baby_timer": 60 },
+    "reproduction": { "baby_monster": "mon_slugpup_shotgun", "baby_count": 3, "baby_timer": 120 },
+    "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "starting_ammo": { "bp_shot_scrap": 6 },
     "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "DROPS_AMMO" ],
     "anger_triggers": [ "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "STALK" ],
