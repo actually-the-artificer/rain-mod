@@ -348,9 +348,9 @@
   {
     "id": "mon_slugcat_rifle",
     "type": "MONSTER",
-    "name": { "str": "riflescug" },
+    "name": { "str": "rifleslug" },
     "copy-from": "mon_slugcat_abstract",
-    "description": "This slugcat clutches a crude rifle in its paws. Its head swievels occasionally, scanning the horizon for threats.",
+    "description": "This slugcat clutches a crude rifle in its paws. Its head swivels occasionally, scanning the horizon for threats.",
     "death_drops": { "subtype": "collection", "groups": [ [ "slugcat_guns_rifle", 100 ] ] },
     "color": "white",
     "aggression": 10,
