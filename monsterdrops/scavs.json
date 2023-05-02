@@ -10,18 +10,49 @@
           { "item": "spear_knife", "prob": 15 },
           { "item": "spear_wood_simple", "prob": 15 },
           { "item": "spear_spike", "prob": 50 },
-		  { "item": "spear_copper", "prob": 10 }
+          { "item": "spear_copper", "prob": 10 }
         ],
-		"prob": 100
+        "prob": 100
       }
     ]
   },
-    {
+  {
     "type": "item_group",
     "subtype": "collection",
     "id": "scav_pistols",
     "entries": [
-      { "item": "scav_pistol_item", "charges": [ 0, 6 ], "prob": 100 }
+      { "item": "pistol_flintlock", "charges": [ 0, 1 ], "prob": 100 },
+      {
+        "collection": [ { "item": "flintlock_pouch", "damage": [ 1, 2 ] }, { "item": "flintlock_ammo", "charges-min": 0, "charges-max": 14 } ],
+        "prob": 100
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "scav_muskets",
+    "entries": [
+      { "item": "rifle_flintlock", "charges": [ 0, 1 ], "prob": 50 },
+      { "item": "longrifle_flintlock", "charges": [ 0, 1 ], "prob": 25 },
+      { "item": "carbine_flintlock_double", "charges": [ 0, 2 ], "prob": 25 },
+      {
+        "collection": [ { "item": "flintlock_pouch", "damage": [ 1, 2 ] }, { "item": "flintlock_ammo", "charges-min": 0, "charges-max": 14 } ],
+        "prob": 100
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "scav_carbines",
+    "entries": [
+      { "item": "carbine_flintlock", "charges": [ 0, 1 ], "prob": 50 },
+      { "item": "carbine_flintlock_double", "charges": [ 0, 2 ], "prob": 50 },
+      {
+        "collection": [ { "item": "flintlock_pouch", "damage": [ 1, 2 ] }, { "item": "flintlock_ammo", "charges-min": 0, "charges-max": 14 } ],
+        "prob": 100
+      }
     ]
   }
 ]
