@@ -115,7 +115,7 @@
         "description": "The scavenger throws a rock!"
       }
     ],
-    "reproduction": { "baby_monster": "mon_scavpup", "baby_count": 1, "baby_timer": 360 }
+    "reproduction": { "baby_monster": "mon_scavpup", "baby_count": 1, "baby_timer": 60 }
   },
   {
     "id": "mon_scavpup",
@@ -124,6 +124,7 @@
     "copy-from": "mon_scavpup_abstract",
     "description": "A young scavenger, not yet fully grown. It grasps a spear in one hand as it examines its surrounding with an uncanny curiosity.",
     "death_drops": { "subtype": "collection", "groups": [ [ "scav_spears", 100 ] ] },
+	  "upgrades": { "age_grow": 30, "into": "mon_scavenger" },
     "special_attacks": [
       {
         "id": "stretch_attack",
@@ -185,6 +186,7 @@
 	"death_drops": { "subtype": "collection", "groups": [ [ "scav_pistols", 100 ] ] },
 	"starting_ammo": { "flintlock_ammo": 6 },
 	    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO" ],
+	  "upgrades": { "age_grow": 30, "into": "mon_scavenger_gunslinger" },
     "special_attacks": [
       {
         "type": "gun",
@@ -229,7 +231,7 @@
         "fake_per": 8,
         "ranges": [ [ 2, 10, "DEFAULT" ] ],
         "require_targeting_player": false,
-        "description": "The scavenger fires their flintlock rifle!"
+        "description": "The scavenger fires their flintlock musket!"
       }
     ]
   },
@@ -248,6 +250,7 @@
 	"death_drops": { "subtype": "collection", "groups": [ [ "scav_carbines", 100 ] ] },
 	"starting_ammo": { "flintlock_ammo": 6 },
 	    "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "NO_BREED", "DROPS_AMMO" ],
+	  "upgrades": { "age_grow": 30, "into": "mon_scavenger_musketeer" },
     "special_attacks": [
       {
         "type": "gun",
