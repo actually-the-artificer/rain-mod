@@ -214,7 +214,7 @@
 	"melee_skill": 2,
     "melee_dice": 2,
     "melee_dice_sides": 4,
-    "reproduction": { "baby_monster": "mon_scavpup_muskeeter", "baby_count": 1, "baby_timer": 120 },
+    "reproduction": { "baby_monster": "mon_scavpup_musketeer", "baby_count": 1, "baby_timer": 120 },
 	"starting_ammo": { "flintlock_ammo": 6 },
 	"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "PRIORITIZE_TARGETS", "DROPS_AMMO" ],
 	"special_attacks": [
